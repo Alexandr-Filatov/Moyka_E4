@@ -7,7 +7,7 @@
 	(title_block
 		(title "Система электродвижения")
 		(date "2025-04-15")
-		(comment 1 "НВЦТ.0001.0000.100 Э4")
+		(comment 1 "650232.001 Э4")
 		(comment 2 "Филатов А.С.")
 		(comment 3 "Сизякин А.В.")
 		(comment 4 "Коваленко В.А.")
@@ -1291,16 +1291,6 @@
 			)
 		)
 		(uuid "577be34d-a1ee-48b8-b2a7-6a2b66626b28")
-	)
-	(text "НВЦТ.0001.0000.100"
-		(exclude_from_sim no)
-		(at 16.764 332.232 90)
-		(effects
-			(font
-				(size 2.5 2.5)
-			)
-		)
-		(uuid "5827b833-19dc-48f7-b685-099e2e9aa601")
 	)
 	(text "X7"
 		(exclude_from_sim no)
