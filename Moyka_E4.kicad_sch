@@ -8,8 +8,149 @@
 		(title "Система электродвижения")
 		(date "2025-04-15")
 		(comment 1 "650232.001 Э4")
+		(comment 2 "Филатов А.С.")
+		(comment 3 "Сизякин А.В.")
+		(comment 4 "Коваленко В.А.")
+		(comment 6 "Зубков Д.Н.")
 	)
-	(lib_symbols)
+	(lib_symbols
+		(symbol "Device:Fuse"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "F"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fuse"
+				(at -1.905 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*Fuse*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Fuse_0_1"
+				(rectangle
+					(start -0.762 -2.54)
+					(end 0.762 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Fuse_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
 	(rectangle
 		(start 387.35 233.68)
 		(end 416.56 266.7)
@@ -21,6 +162,19 @@
 			(type none)
 		)
 		(uuid 029f3fe2-8b67-43ae-8b95-9f2c509cb490)
+	)
+	(rectangle
+		(start 267.97 488.95)
+		(end 278.13 499.11)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 194 194 194 1)
+		)
+		(uuid 09a9ccd2-4301-4ca0-a65b-fcaeca3e9cc7)
 	)
 	(rectangle
 		(start 406.4 359.41)
@@ -97,18 +251,6 @@
 			(color 194 194 194 1)
 		)
 		(uuid 14e3e89a-d575-499f-93f8-8362d4b09918)
-	)
-	(rectangle
-		(start 203.2 344.17)
-		(end 222.25 354.33)
-		(stroke
-			(width 0.5)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 18ddb3cd-07f9-4c4e-8d8d-fc47b1c09dd2)
 	)
 	(rectangle
 		(start 60.96 313.69)
@@ -661,19 +803,6 @@
 		(uuid b4e4de22-58e9-4228-8577-a0a541ba730e)
 	)
 	(rectangle
-		(start 173.99 459.74)
-		(end 184.15 496.57)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type color)
-			(color 194 194 194 1)
-		)
-		(uuid bb0ceb2f-e426-441b-b8e8-555ff3da98a9)
-	)
-	(rectangle
 		(start 199.39 351.79)
 		(end 203.2 354.33)
 		(stroke
@@ -775,8 +904,8 @@
 		(uuid cea1e1b2-aff3-4e34-b4d6-072b0429d912)
 	)
 	(rectangle
-		(start 466.09 513.08)
-		(end 537.21 552.45)
+		(start 513.08 513.08)
+		(end 584.2 552.45)
 		(stroke
 			(width 0.5)
 			(type default)
@@ -798,6 +927,19 @@
 			(type none)
 		)
 		(uuid e129dce0-c8a4-4a4d-a220-aafd117ba5e9)
+	)
+	(rectangle
+		(start 363.22 487.68)
+		(end 373.38 497.84)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 194 194 194 1)
+		)
+		(uuid e158de07-dacd-4eec-9cb9-176394f0f27a)
 	)
 	(rectangle
 		(start 406.4 171.45)
@@ -850,18 +992,6 @@
 		(uuid edc24f14-51a0-4f0c-bf5d-3f0d570688b4)
 	)
 	(rectangle
-		(start 173.99 459.74)
-		(end 203.2 496.57)
-		(stroke
-			(width 0.5)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid edeff6da-92cd-4f0a-9445-8dfe941b4609)
-	)
-	(rectangle
 		(start 204.47 250.19)
 		(end 223.52 264.16)
 		(stroke
@@ -872,6 +1002,18 @@
 			(type none)
 		)
 		(uuid ee3309f1-55ae-4336-9f7d-d69a70eba96a)
+	)
+	(rectangle
+		(start 267.97 488.95)
+		(end 278 499.11)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid f0088da1-95d3-4189-8728-795dce68d898)
 	)
 	(rectangle
 		(start 373.38 506.73)
@@ -934,9 +1076,21 @@
 		)
 		(uuid f9c35a44-5792-4613-bc83-e24fb0b92971)
 	)
-	(text "А10"
+	(rectangle
+		(start 363.22 487.68)
+		(end 373.25 497.84)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid fc7b17e3-a1e8-40ab-8d8b-bae6ce2f5698)
+	)
+	(text "ВК1"
 		(exclude_from_sim no)
-		(at 502.92 508.254 0)
+		(at 549.91 508.254 0)
 		(effects
 			(font
 				(size 5 5)
@@ -1006,6 +1160,16 @@
 		)
 		(uuid "1549975b-a971-46d5-b439-14aca333f83b")
 	)
+	(text "A3-XT1.VDC-"
+		(exclude_from_sim no)
+		(at 659.892 411.988 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+		)
+		(uuid "1663921c-2d22-4249-b7e3-007444302fb6")
+	)
 	(text "XT1"
 		(exclude_from_sim no)
 		(at 110.998 327.406 0)
@@ -1029,6 +1193,17 @@
 			)
 		)
 		(uuid "172dd119-9ae5-4407-80d0-4e71bf29ba2e")
+	)
+	(text "- для жгутов поз.10-11 провод ПГУВ 1х1,5 мм2;"
+		(exclude_from_sim no)
+		(at 648.97 454.66 0)
+		(effects
+			(font
+				(size 3.5 3.5)
+			)
+			(justify left)
+		)
+		(uuid "1742d7d5-8faa-4e66-a6b8-f33b955994ef")
 	)
 	(text "X13"
 		(exclude_from_sim no)
@@ -1124,6 +1299,28 @@
 		)
 		(uuid "355f062d-ff56-4669-aa7e-2a8768231494")
 	)
+	(text "A4-XT1.V,"
+		(exclude_from_sim no)
+		(at 665.226 363.728 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+		)
+		(uuid "3cf18f1c-30e5-4b01-9679-a741de94b52a")
+	)
+	(text "Датчик температуры 2"
+		(exclude_from_sim no)
+		(at 481.584 330.708 90)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.6)
+				(bold yes)
+			)
+		)
+		(uuid "3d157a76-68c0-48d7-a4a2-3d7e03e9fb9e")
+	)
 	(text "X9"
 		(exclude_from_sim no)
 		(at 388.62 313.69 0)
@@ -1135,6 +1332,16 @@
 			)
 		)
 		(uuid "3f92da0f-8d1c-46d0-99ad-26fc75bdcc87")
+	)
+	(text "A3-XT1.VDC+,"
+		(exclude_from_sim no)
+		(at 659.892 409.194 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+		)
+		(uuid "40384518-796b-410f-aac7-9af34ea71475")
 	)
 	(text "XT1"
 		(exclude_from_sim no)
@@ -1172,7 +1379,7 @@
 		)
 		(uuid "46454014-807a-4da0-99d9-3857a2055e12")
 	)
-	(text "ООО \"Центр Водородных"
+	(text "ООО \"Электротранспортные"
 		(exclude_from_sim no)
 		(at 811.022 579.628 0)
 		(effects
@@ -1193,6 +1400,17 @@
 			)
 		)
 		(uuid "48da509a-1873-4970-88fb-0506284a6210")
+	)
+	(text "1  Подключение ЭХГ и датчика температуры 2 опционально."
+		(exclude_from_sim no)
+		(at 649.224 436.88 0)
+		(effects
+			(font
+				(size 3.5 3.5)
+			)
+			(justify left)
+		)
+		(uuid "4909e31a-0f5b-4355-b983-4280bb8beead")
 	)
 	(text "A2-X2"
 		(exclude_from_sim no)
@@ -1254,7 +1472,7 @@
 		)
 		(uuid "54a5e32b-d30a-4f85-bfa0-948a8f7e8787")
 	)
-	(text "технологий\""
+	(text "технологии\""
 		(exclude_from_sim no)
 		(at 811.022 583.438 0)
 		(effects
@@ -1263,6 +1481,18 @@
 			)
 		)
 		(uuid "568e1561-ca9a-4093-b39f-4cfd68f3931d")
+	)
+	(text "F2"
+		(exclude_from_sim no)
+		(at 368.554 485.902 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.6)
+				(bold yes)
+			)
+		)
+		(uuid "57150bf1-8324-4021-ab0a-ca3c149a876b")
 	)
 	(text "X1"
 		(exclude_from_sim no)
@@ -1299,6 +1529,17 @@
 			)
 		)
 		(uuid "5cee8cfa-701e-43a0-b3c0-7119e7849f50")
+	)
+	(text "3  Кабели от ГРЩ обжать наконечниками ТМЛ 35-8-9."
+		(exclude_from_sim no)
+		(at 649.478 471.932 0)
+		(effects
+			(font
+				(size 3.5 3.5)
+			)
+			(justify left)
+		)
+		(uuid "5f823c8e-4737-4d7f-b858-a6b86a5d1260")
 	)
 	(text "X1"
 		(exclude_from_sim no)
@@ -1372,6 +1613,27 @@
 		)
 		(uuid "75f9e41d-b4e5-4e00-9945-bd209253e0d8")
 	)
+	(text "A4-XT1.W"
+		(exclude_from_sim no)
+		(at 659.892 366.268 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+		)
+		(uuid "767972bd-c6c3-4689-b8ac-87f7f7bc4c9d")
+	)
+	(text "- для жгутов поз.12, 14-16 кабель ПГВУЭ-35/5;"
+		(exclude_from_sim no)
+		(at 648.97 459.994 0)
+		(effects
+			(font
+				(size 3.5 3.5)
+			)
+			(justify left)
+		)
+		(uuid "773dc9d2-4dbd-40f8-998d-8e77133bb614")
+	)
 	(text "Питание 24В аварийное"
 		(exclude_from_sim no)
 		(at 482.092 214.376 90)
@@ -1384,6 +1646,17 @@
 		)
 		(uuid "7dad893a-1247-4a0d-b012-0956652c12aa")
 	)
+	(text "- для жгута поз.13 кабель МКЭШ 2х2,5 мм2;"
+		(exclude_from_sim no)
+		(at 648.97 465.328 0)
+		(effects
+			(font
+				(size 3.5 3.5)
+			)
+			(justify left)
+		)
+		(uuid "7fea1dc3-0686-40c8-bd64-56a1adcc87d6")
+	)
 	(text "X1"
 		(exclude_from_sim no)
 		(at 103.632 520.446 0)
@@ -1395,6 +1668,29 @@
 			)
 		)
 		(uuid "8349a76e-1cd8-4c28-b143-1790458c423d")
+	)
+	(text "F1"
+		(exclude_from_sim no)
+		(at 273.304 487.172 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.6)
+				(bold yes)
+			)
+		)
+		(uuid "8669107a-83d8-4e14-b58b-9ddb7391fe0b")
+	)
+	(text "2  Для проводов применяемых в жгутах:"
+		(exclude_from_sim no)
+		(at 648.97 443.484 0)
+		(effects
+			(font
+				(size 3.5 3.5)
+			)
+			(justify left)
+		)
+		(uuid "884d94ef-5775-4b1a-aaca-685b56f966fd")
 	)
 	(text "A1-X3\n"
 		(exclude_from_sim no)
@@ -1432,18 +1728,6 @@
 		)
 		(uuid "8d80352e-8d70-4eff-a15d-0a5c407ccea1")
 	)
-	(text "CAN разъём"
-		(exclude_from_sim no)
-		(at 188.468 455.676 0)
-		(effects
-			(font
-				(size 5 5)
-				(thickness 0.254)
-				(bold yes)
-			)
-		)
-		(uuid "8e944218-376d-4a2f-a050-de07838f3ec8")
-	)
 	(text "A2-X12"
 		(exclude_from_sim no)
 		(at 412.242 170.434 0)
@@ -1480,6 +1764,27 @@
 		)
 		(uuid "984a8f92-0c6a-4370-9190-82f3f4f98c6d")
 	)
+	(text "- для жгутов поз.1-9 провод ПГУВ 1х0,5 мм2;"
+		(exclude_from_sim no)
+		(at 648.97 449.326 0)
+		(effects
+			(font
+				(size 3.5 3.5)
+			)
+			(justify left)
+		)
+		(uuid "9b551b86-4176-4718-8a78-2f76b6407f18")
+	)
+	(text "A4-XT1.U,"
+		(exclude_from_sim no)
+		(at 654.812 363.728 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+		)
+		(uuid "9e11de67-7c62-4a5c-b9a5-a786c6fcc03b")
+	)
 	(text "А6\n"
 		(exclude_from_sim no)
 		(at 90.678 501.65 0)
@@ -1504,9 +1809,9 @@
 		)
 		(uuid "a0c070c2-e1d6-4a9d-bf63-6e204854270b")
 	)
-	(text "XT1"
+	(text "ЭХГ"
 		(exclude_from_sim no)
-		(at 212.09 342.9 0)
+		(at 481.584 251.968 90)
 		(effects
 			(font
 				(size 3 3)
@@ -1514,7 +1819,7 @@
 				(bold yes)
 			)
 		)
-		(uuid "a30824bd-7ffa-4d6b-9566-e0d97acc0290")
+		(uuid "a7fffd77-5e6b-41b7-9548-47a7d20110de")
 	)
 	(text "А2"
 		(exclude_from_sim no)
@@ -2005,25 +2310,6 @@
 		)
 		(uuid "0435a740-eeee-44f3-9e86-ec158b702301")
 	)
-	(text_box "16"
-		(exclude_from_sim no)
-		(at 648.716 223.52 0)
-		(size 22.098 7.62)
-		(margins 1.75 1.75 1.75 1.75)
-		(stroke
-			(width 0.5)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 3.5 3.5)
-			)
-		)
-		(uuid "043dd830-e7d7-42f8-9fcd-b977b0ccc603")
-	)
 	(text_box "CANH"
 		(exclude_from_sim no)
 		(at 101.6 532.13 0)
@@ -2124,7 +2410,7 @@
 	)
 	(text_box "A3-X1"
 		(exclude_from_sim no)
-		(at 648.716 360.68 0)
+		(at 648.716 162.56 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -2201,9 +2487,28 @@
 		)
 		(uuid "06277851-4193-4923-a16c-8c67cfd87928")
 	)
+	(text_box "F2"
+		(exclude_from_sim no)
+		(at 648.716 269.24 0)
+		(size 22.098 7.62)
+		(margins 1.75 1.75 1.75 1.75)
+		(stroke
+			(width 0.5)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 3.5 3.5)
+			)
+		)
+		(uuid "070b3d2d-1ee3-432f-9525-85a65c3debf6")
+	)
 	(text_box "Жгут НВЦТ.0001.0000.200"
 		(exclude_from_sim no)
-		(at 670.814 177.8 0)
+		(at 670.814 314.96 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -2216,6 +2521,9 @@
 		(effects
 			(font
 				(size 3.5 3.5)
+				(thickness 0.7)
+				(bold yes)
+				(italic yes)
 			)
 		)
 		(uuid "07e3efcc-9d77-4a3f-a119-f64a4de2d834")
@@ -2257,25 +2565,6 @@
 			)
 		)
 		(uuid "096a6ff3-1fa0-45e1-bf18-6a7ad419b732")
-	)
-	(text_box "2\n"
-		(exclude_from_sim no)
-		(at 173.99 466.09 0)
-		(size 10.16 3.81)
-		(margins 1.5 1.5 1.5 1.5)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 2 2)
-			)
-		)
-		(uuid "097f62f8-bb4a-4fa1-a904-f22576e45a3c")
 	)
 	(text_box "VDC+"
 		(exclude_from_sim no)
@@ -2412,7 +2701,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 353.06 0)
+		(at 780.034 337.82 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -2451,7 +2740,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 147.32 0)
+		(at 780.034 215.9 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -2489,7 +2778,7 @@
 	)
 	(text_box "Под пайку"
 		(exclude_from_sim no)
-		(at 790.194 330.2 0)
+		(at 790.194 254 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -2546,7 +2835,7 @@
 	)
 	(text_box "Розетка на кабель 770680-1"
 		(exclude_from_sim no)
-		(at 670.814 360.68 0)
+		(at 670.814 162.56 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -2601,28 +2890,9 @@
 		)
 		(uuid "10515e87-c93f-4b4f-83d5-a5e40ea8795d")
 	)
-	(text_box "-\n"
-		(exclude_from_sim no)
-		(at 184.15 477.52 0)
-		(size 19.05 3.81)
-		(margins 1.5 1.5 1.5 1.5)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 2 2)
-			)
-		)
-		(uuid "1068b25e-69fc-4287-b740-2d8248780f41")
-	)
 	(text_box "Под пайку"
 		(exclude_from_sim no)
-		(at 790.194 314.96 0)
+		(at 790.194 292.1 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -2660,7 +2930,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 337.82 0)
+		(at 780.034 223.52 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -2944,6 +3214,25 @@
 		)
 		(uuid "15756041-56cd-4d55-b396-6cee6dd8e254")
 	)
+	(text_box "Конт"
+		(exclude_from_sim no)
+		(at 267.97 488.95 0)
+		(size 10.16 2.54)
+		(margins 1.5 1.5 1.5 1.5)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2 2)
+			)
+		)
+		(uuid "158df4de-d85f-4990-ab28-6d3f16994ab9")
+	)
 	(text_box "6"
 		(exclude_from_sim no)
 		(at 336.55 76.2 0)
@@ -2981,25 +3270,6 @@
 			)
 		)
 		(uuid "16f6d455-c4b7-4b62-930f-f247552fb1ca")
-	)
-	(text_box "Цепь"
-		(exclude_from_sim no)
-		(at 203.2 344.17 0)
-		(size 19.05 2.54)
-		(margins 1.5 1.5 1.5 1.5)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 2 2)
-			)
-		)
-		(uuid "1720823a-5edd-4d1d-804e-5d63793ce8c9")
 	)
 	(text_box "Кол."
 		(exclude_from_sim no)
@@ -3041,7 +3311,7 @@
 	)
 	(text_box "4"
 		(exclude_from_sim no)
-		(at 648.716 132.08 0)
+		(at 648.716 170.18 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -3060,7 +3330,7 @@
 	)
 	(text_box "Под пайку"
 		(exclude_from_sim no)
-		(at 790.194 414.02 0)
+		(at 790.194 185.42 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -3077,9 +3347,9 @@
 		)
 		(uuid "1797503d-14ff-4ed6-98d1-7c4df5f37d5b")
 	)
-	(text_box "Кабель ПГВУЭ-35/5"
+	(text_box ""
 		(exclude_from_sim no)
-		(at 790.194 208.28 0)
+		(at 790.194 391.16 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -3098,7 +3368,7 @@
 	)
 	(text_box "Под пайку"
 		(exclude_from_sim no)
-		(at 790.194 421.64 0)
+		(at 790.194 208.28 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -3115,9 +3385,9 @@
 		)
 		(uuid "187ff9ba-fe74-4b36-84d0-a55634199472")
 	)
-	(text_box "Провод ПГУВ 1х0,5мм"
+	(text_box ""
 		(exclude_from_sim no)
-		(at 790.194 132.08 0)
+		(at 790.194 170.18 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -3136,7 +3406,7 @@
 	)
 	(text_box "Жгут НВЦТ.0001.0000.220"
 		(exclude_from_sim no)
-		(at 670.814 193.04 0)
+		(at 670.814 345.44 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -3149,6 +3419,9 @@
 		(effects
 			(font
 				(size 3.5 3.5)
+				(thickness 0.7)
+				(bold yes)
+				(italic yes)
 			)
 		)
 		(uuid "18cc69ca-6fb3-45ed-a65d-f3e7dc4ccf08")
@@ -3174,7 +3447,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 139.7 0)
+		(at 780.034 193.04 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -3288,7 +3561,7 @@
 	)
 	(text_box "Жгут НВЦТ.0001.0000.140"
 		(exclude_from_sim no)
-		(at 670.814 132.08 0)
+		(at 670.814 170.18 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -3301,6 +3574,9 @@
 		(effects
 			(font
 				(size 3.5 3.5)
+				(thickness 0.7)
+				(bold yes)
+				(italic yes)
 			)
 		)
 		(uuid "1add5f8c-2001-42ad-a4b0-e8372f0358ee")
@@ -3630,7 +3906,7 @@
 	)
 	(text_box "9"
 		(exclude_from_sim no)
-		(at 648.716 170.18 0)
+		(at 648.716 299.72 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -3670,7 +3946,7 @@
 	)
 	(text_box "Жгут НВЦТ.0001.0000.110"
 		(exclude_from_sim no)
-		(at 670.814 109.22 0)
+		(at 670.814 101.6 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -3683,6 +3959,9 @@
 		(effects
 			(font
 				(size 3.5 3.5)
+				(thickness 0.7)
+				(bold yes)
+				(italic yes)
 			)
 		)
 		(uuid "1e69388d-24a5-433f-8556-37167682be90")
@@ -3746,7 +4025,7 @@
 	)
 	(text_box "Вилка на кабель FQ24-6pin TJ-12"
 		(exclude_from_sim no)
-		(at 670.814 414.02 0)
+		(at 670.814 185.42 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -3802,9 +4081,9 @@
 		)
 		(uuid "21640941-87db-4c88-8cd1-96d9fd82dc91")
 	)
-	(text_box "Наконечник ТМЛ 35-8-9"
+	(text_box ""
 		(exclude_from_sim no)
-		(at 790.194 398.78 0)
+		(at 790.194 360.68 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -3878,9 +4157,9 @@
 		)
 		(uuid "2365695d-3e27-4771-a1fc-dafb32bda5f4")
 	)
-	(text_box "Провод ПГУВ 1х0,5мм"
+	(text_box "\n"
 		(exclude_from_sim no)
-		(at 790.194 109.22 0)
+		(at 790.194 101.6 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -3918,7 +4197,7 @@
 	)
 	(text_box "Жгут НВЦТ.0001.0000.150"
 		(exclude_from_sim no)
-		(at 670.814 139.7 0)
+		(at 670.814 193.04 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -3931,6 +4210,9 @@
 		(effects
 			(font
 				(size 3.5 3.5)
+				(thickness 0.7)
+				(bold yes)
+				(italic yes)
 			)
 		)
 		(uuid "255bd49f-d3f6-438d-ae98-54f325f50905")
@@ -4108,7 +4390,7 @@
 	)
 	(text_box "Жгут НВЦТ.0001.0000.170"
 		(exclude_from_sim no)
-		(at 670.814 154.94 0)
+		(at 670.814 246.38 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -4121,6 +4403,9 @@
 		(effects
 			(font
 				(size 3.5 3.5)
+				(thickness 0.7)
+				(bold yes)
+				(italic yes)
 			)
 		)
 		(uuid "29bac325-2067-49ea-9373-ba086dad0136")
@@ -4355,7 +4640,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 322.58 0)
+		(at 780.034 421.64 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -4390,25 +4675,6 @@
 			)
 		)
 		(uuid "2ed63d6a-c09d-4b4f-9a12-33c153f710a9")
-	)
-	(text_box "Кабель ПГВУЭ-35/5"
-		(exclude_from_sim no)
-		(at 790.194 215.9 0)
-		(size 45.72 7.62)
-		(margins 1.75 1.75 1.75 1.75)
-		(stroke
-			(width 0.5)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 3.5 3.5)
-			)
-		)
-		(uuid "2f77af9c-2934-40c3-9254-4685362fab93")
 	)
 	(text_box "11"
 		(exclude_from_sim no)
@@ -4450,7 +4716,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 299.72 0)
+		(at 780.034 307.34 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -4469,7 +4735,7 @@
 	)
 	(text_box "Розетка на кабель 1-1703639-1"
 		(exclude_from_sim no)
-		(at 670.814 383.54 0)
+		(at 670.814 139.7 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -4697,7 +4963,7 @@
 	)
 	(text_box "6"
 		(exclude_from_sim no)
-		(at 648.716 147.32 0)
+		(at 648.716 215.9 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -4733,9 +4999,9 @@
 		)
 		(uuid "330cc5e3-cc35-4aa0-beb7-249ff3a356a7")
 	)
-	(text_box "Провод ПГУВ 1х0,5мм"
+	(text_box "\n"
 		(exclude_from_sim no)
-		(at 790.194 116.84 0)
+		(at 790.194 124.46 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -4751,25 +5017,6 @@
 			)
 		)
 		(uuid "337c3ee3-b0cf-4a56-8f51-8b90a4eb0b26")
-	)
-	(text_box "-\n"
-		(exclude_from_sim no)
-		(at 184.15 492.76 0)
-		(size 19.05 3.81)
-		(margins 1.5 1.5 1.5 1.5)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 2 2)
-			)
-		)
-		(uuid "34297ee8-ce3e-4530-89f7-2c3d288c281f")
 	)
 	(text_box "19"
 		(exclude_from_sim no)
@@ -4830,7 +5077,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 276.86 0)
+		(at 780.034 154.94 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -4944,7 +5191,7 @@
 	)
 	(text_box "A2-X3"
 		(exclude_from_sim no)
-		(at 648.716 276.86 0)
+		(at 648.716 154.94 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -4982,7 +5229,7 @@
 	)
 	(text_box "Вилка на кабель FQ24-4pin TJ-12"
 		(exclude_from_sim no)
-		(at 670.814 330.2 0)
+		(at 670.814 254 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -5039,7 +5286,7 @@
 	)
 	(text_box "Контакт 1-968857-1"
 		(exclude_from_sim no)
-		(at 790.194 246.38 0)
+		(at 790.194 375.92 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -5096,7 +5343,7 @@
 	)
 	(text_box "Вилка на кабель FQ24-8pin TJ-12"
 		(exclude_from_sim no)
-		(at 670.814 292.1 0)
+		(at 670.814 200.66 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -5286,7 +5533,7 @@
 	)
 	(text_box "Розетка на кабель 776164-1"
 		(exclude_from_sim no)
-		(at 670.814 231.14 0)
+		(at 670.814 109.22 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -5340,25 +5587,6 @@
 			)
 		)
 		(uuid "3c6cb820-896b-439f-8f94-3ced74416115")
-	)
-	(text_box "7"
-		(exclude_from_sim no)
-		(at 173.99 485.14 0)
-		(size 10.16 3.81)
-		(margins 1.5 1.5 1.5 1.5)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 2 2)
-			)
-		)
-		(uuid "3c78e28a-3a97-4332-bf55-57c956e989c1")
 	)
 	(text_box "1"
 		(exclude_from_sim no)
@@ -5456,28 +5684,9 @@
 		)
 		(uuid "3ddaa644-3fc5-48e0-b136-0d64d6b6a7fd")
 	)
-	(text_box "3"
-		(exclude_from_sim no)
-		(at 173.99 469.9 0)
-		(size 10.16 3.81)
-		(margins 1.5 1.5 1.5 1.5)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 2 2)
-			)
-		)
-		(uuid "3e37deb6-1ebd-431e-8484-d35ef12693e5")
-	)
 	(text_box "A2-X10"
 		(exclude_from_sim no)
-		(at 648.716 330.2 0)
+		(at 648.716 254 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -5610,7 +5819,7 @@
 	)
 	(text_box "Жгут НВЦТ.0001.0000.160"
 		(exclude_from_sim no)
-		(at 670.814 147.32 0)
+		(at 670.814 215.9 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -5623,6 +5832,9 @@
 		(effects
 			(font
 				(size 3.5 3.5)
+				(thickness 0.7)
+				(bold yes)
+				(italic yes)
 			)
 		)
 		(uuid "426da4b7-8e2d-4bc0-afc7-7c2f84b17c6a")
@@ -5666,25 +5878,6 @@
 			)
 		)
 		(uuid "42ec2191-da5c-40e5-84e4-a3803a4b5246")
-	)
-	(text_box "15"
-		(exclude_from_sim no)
-		(at 648.716 215.9 0)
-		(size 22.098 7.62)
-		(margins 1.75 1.75 1.75 1.75)
-		(stroke
-			(width 0.5)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 3.5 3.5)
-			)
-		)
-		(uuid "433c6c58-2c8f-4387-b4af-79ff6c595a81")
 	)
 	(text_box "23"
 		(exclude_from_sim no)
@@ -5764,7 +5957,7 @@
 	)
 	(text_box ""
 		(exclude_from_sim no)
-		(at 790.194 436.88 0)
+		(at 790.194 261.62 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -5783,7 +5976,7 @@
 	)
 	(text_box "A8-X1"
 		(exclude_from_sim no)
-		(at 648.716 429.26 0)
+		(at 648.716 231.14 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -5878,7 +6071,7 @@
 	)
 	(text_box "Розетка на кабель 770680-5"
 		(exclude_from_sim no)
-		(at 670.814 269.24 0)
+		(at 670.814 132.08 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -5971,9 +6164,9 @@
 		)
 		(uuid "48af2b7c-9f7d-41e2-9caa-14c5e435bbf1")
 	)
-	(text_box "1"
+	(text_box "3"
 		(exclude_from_sim no)
-		(at 780.034 398.78 0)
+		(at 780.034 360.68 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -6030,7 +6223,7 @@
 	)
 	(text_box "Контакт 770520-1"
 		(exclude_from_sim no)
-		(at 790.194 231.14 0)
+		(at 790.194 109.22 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -6066,9 +6259,9 @@
 		)
 		(uuid "499b2ace-f892-4cd1-a6d3-efb5d72ae022")
 	)
-	(text_box "А10"
+	(text_box "ВК1"
 		(exclude_from_sim no)
-		(at 648.716 101.6 0)
+		(at 648.716 284.48 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -6126,7 +6319,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 429.26 0)
+		(at 780.034 231.14 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -6161,25 +6354,6 @@
 			)
 		)
 		(uuid "4bc8316f-8498-4d1f-9347-071fad7da11d")
-	)
-	(text_box "Кабель НВЦТ.0001.0000.250"
-		(exclude_from_sim no)
-		(at 670.814 215.9 0)
-		(size 109.22 7.62)
-		(margins 1.75 1.75 1.75 1.75)
-		(stroke
-			(width 0.5)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 3.5 3.5)
-			)
-		)
-		(uuid "4c09d2d9-acba-4c8c-8065-018e242f23fc")
 	)
 	(text_box "Цепь"
 		(exclude_from_sim no)
@@ -6430,7 +6604,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 132.08 0)
+		(at 780.034 170.18 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -6504,9 +6678,9 @@
 		)
 		(uuid "517fc37a-9c4d-466a-abed-640f461ebdd0")
 	)
-	(text_box "Жгут НВЦТ.0001.0000.180"
+	(text_box "Датчик НВЦТ.0001.0000.180"
 		(exclude_from_sim no)
-		(at 670.814 162.56 0)
+		(at 670.814 276.86 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -6519,6 +6693,9 @@
 		(effects
 			(font
 				(size 3.5 3.5)
+				(thickness 0.7)
+				(bold yes)
+				(italic yes)
 			)
 		)
 		(uuid "5229625b-39ca-4bd1-96bc-79a72a952428")
@@ -6637,9 +6814,9 @@
 		)
 		(uuid "55db8317-6521-4d6f-84be-b4f6d3e8eb0f")
 	)
-	(text_box "A3-XT1"
+	(text_box ""
 		(exclude_from_sim no)
-		(at 648.716 368.3 0)
+		(at 648.716 406.4 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -6675,25 +6852,6 @@
 		)
 		(uuid "5656a08c-6cbe-4af0-bfa7-59c8f3fb44b8")
 	)
-	(text_box "-\n"
-		(exclude_from_sim no)
-		(at 184.15 469.9 0)
-		(size 19.05 3.81)
-		(margins 1.5 1.5 1.5 1.5)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 2 2)
-			)
-		)
-		(uuid "569b9ac2-0d83-444e-b269-f78850e1429b")
-	)
 	(text_box "20"
 		(exclude_from_sim no)
 		(at 406.4 129.54 0)
@@ -6715,7 +6873,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 284.48 0)
+		(at 780.034 177.8 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -6732,28 +6890,9 @@
 		)
 		(uuid "5757978e-2659-4847-a184-0b74702a330d")
 	)
-	(text_box "9"
-		(exclude_from_sim no)
-		(at 173.99 492.76 0)
-		(size 10.16 3.81)
-		(margins 1.5 1.5 1.5 1.5)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 2 2)
-			)
-		)
-		(uuid "57584dd6-2d05-44b5-aa8e-7d87cc96fdc6")
-	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 246.38 0)
+		(at 780.034 375.92 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -6808,9 +6947,9 @@
 		)
 		(uuid "57a41de8-88ae-4df3-87e0-4d9a9a50a9d9")
 	)
-	(text_box "Кабель МКЭШ 2х2,5мм"
+	(text_box ""
 		(exclude_from_sim no)
-		(at 790.194 200.66 0)
+		(at 790.194 368.3 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -6827,9 +6966,9 @@
 		)
 		(uuid "57fb95fb-10ac-4f99-9526-95c3bae1226f")
 	)
-	(text_box "Под пайку"
+	(text_box "Опционально"
 		(exclude_from_sim no)
-		(at 790.194 322.58 0)
+		(at 790.194 421.64 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -6887,7 +7026,7 @@
 	)
 	(text_box "Контакт 1-968857-1"
 		(exclude_from_sim no)
-		(at 790.194 345.44 0)
+		(at 790.194 322.58 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -6922,25 +7061,6 @@
 			)
 		)
 		(uuid "59a1cc31-89be-431b-ac37-7501feee95bd")
-	)
-	(text_box "A3-XT2"
-		(exclude_from_sim no)
-		(at 648.716 375.92 0)
-		(size 22.098 7.62)
-		(margins 1.75 1.75 1.75 1.75)
-		(stroke
-			(width 0.5)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 3.5 3.5)
-			)
-		)
-		(uuid "59bcc24c-502b-4e04-9db4-a0e64e457ed1")
 	)
 	(text_box "14"
 		(exclude_from_sim no)
@@ -7039,7 +7159,7 @@
 	)
 	(text_box "A2-X9"
 		(exclude_from_sim no)
-		(at 648.716 322.58 0)
+		(at 648.716 421.64 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -7075,9 +7195,9 @@
 		)
 		(uuid "5b173258-6190-4dd8-804b-dc5fcb7745bc")
 	)
-	(text_box "A4-XT1"
+	(text_box ""
 		(exclude_from_sim no)
-		(at 648.716 398.78 0)
+		(at 648.716 360.68 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -7172,7 +7292,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 330.2 0)
+		(at 780.034 254 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -7210,7 +7330,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 360.68 0)
+		(at 780.034 162.56 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -7227,24 +7347,24 @@
 		)
 		(uuid "5cd1cf50-3144-488d-ae9f-df9aff45c127")
 	)
-	(text_box "Наконечник ТМЛ 35-8-9"
+	(text_box "Конт"
 		(exclude_from_sim no)
-		(at 790.194 375.92 0)
-		(size 45.72 7.62)
-		(margins 1.75 1.75 1.75 1.75)
+		(at 363.22 487.68 0)
+		(size 10.16 2.54)
+		(margins 1.5 1.5 1.5 1.5)
 		(stroke
-			(width 0.5)
-			(type solid)
+			(width 0)
+			(type default)
 		)
 		(fill
 			(type none)
 		)
 		(effects
 			(font
-				(size 3.5 3.5)
+				(size 2 2)
 			)
 		)
-		(uuid "5d134d52-bb72-49ce-bf8c-ec8b1d089f92")
+		(uuid "5d269f11-54fe-40ee-ac2a-25fd2c4101b5")
 	)
 	(text_box "1\n"
 		(exclude_from_sim no)
@@ -7265,25 +7385,6 @@
 		)
 		(uuid "5d680129-677d-4c21-b17b-c344c6280e2b")
 	)
-	(text_box "-\n"
-		(exclude_from_sim no)
-		(at 184.15 473.71 0)
-		(size 19.05 3.81)
-		(margins 1.5 1.5 1.5 1.5)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 2 2)
-			)
-		)
-		(uuid "5d969834-2457-495d-9828-9700ed9f1dd0")
-	)
 	(text_box "АВАРИЯ"
 		(exclude_from_sim no)
 		(at 101.6 149.86 0)
@@ -7303,9 +7404,9 @@
 		)
 		(uuid "5d9910b8-8e20-4b24-bf51-1753139a325e")
 	)
-	(text_box "Провод ПГУВ 1х0,5мм"
+	(text_box ""
 		(exclude_from_sim no)
-		(at 790.194 154.94 0)
+		(at 790.194 246.38 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -7324,7 +7425,7 @@
 	)
 	(text_box "11\n"
 		(exclude_from_sim no)
-		(at 648.716 185.42 0)
+		(at 648.716 330.2 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -7362,7 +7463,7 @@
 	)
 	(text_box "A1-X3"
 		(exclude_from_sim no)
-		(at 648.716 246.38 0)
+		(at 648.716 375.92 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -7457,7 +7558,7 @@
 	)
 	(text_box ""
 		(exclude_from_sim no)
-		(at 790.194 238.76 0)
+		(at 790.194 353.06 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -7495,7 +7596,7 @@
 	)
 	(text_box "A1-X4"
 		(exclude_from_sim no)
-		(at 648.716 254 0)
+		(at 648.716 398.78 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -7628,7 +7729,7 @@
 	)
 	(text_box "A6-X1"
 		(exclude_from_sim no)
-		(at 648.716 414.02 0)
+		(at 648.716 185.42 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -7666,7 +7767,7 @@
 	)
 	(text_box "7"
 		(exclude_from_sim no)
-		(at 648.716 154.94 0)
+		(at 648.716 246.38 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -8083,25 +8184,6 @@
 		)
 		(uuid "6b5dfe58-c1db-445f-831d-e059e970bc0d")
 	)
-	(text_box "1"
-		(exclude_from_sim no)
-		(at 780.034 223.52 0)
-		(size 10.16 7.62)
-		(margins 1.75 1.75 1.75 1.75)
-		(stroke
-			(width 0.5)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 3.5 3.5)
-			)
-		)
-		(uuid "6c02fbdc-4174-438d-be98-83defd999602")
-	)
 	(text_box "GND_CAN"
 		(exclude_from_sim no)
 		(at 387.35 251.46 0)
@@ -8218,7 +8300,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 436.88 0)
+		(at 780.034 261.62 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -8411,7 +8493,7 @@
 	)
 	(text_box "Жгут НВЦТ.0001.0000.210"
 		(exclude_from_sim no)
-		(at 670.814 185.42 0)
+		(at 670.814 330.2 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -8424,6 +8506,9 @@
 		(effects
 			(font
 				(size 3.5 3.5)
+				(thickness 0.7)
+				(bold yes)
+				(italic yes)
 			)
 		)
 		(uuid "70bc20c8-22df-4474-9cc9-e8dade883223")
@@ -8468,7 +8553,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 383.54 0)
+		(at 780.034 139.7 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -8542,25 +8627,6 @@
 		)
 		(uuid "730e2940-18e7-4677-a014-e2fd18f04e86")
 	)
-	(text_box "VDC+"
-		(exclude_from_sim no)
-		(at 203.2 350.52 0)
-		(size 19.05 3.81)
-		(margins 1.5 1.5 1.5 1.5)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 2 2)
-			)
-		)
-		(uuid "73960877-86b1-41bb-9f18-9220af0cdf6f")
-	)
 	(text_box "~{COS_IN}_MC"
 		(exclude_from_sim no)
 		(at 101.6 127 0)
@@ -8601,7 +8667,7 @@
 	)
 	(text_box "Розетка на кабель HVSL1000062A135"
 		(exclude_from_sim no)
-		(at 670.814 254 0)
+		(at 670.814 398.78 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -8639,7 +8705,7 @@
 	)
 	(text_box ""
 		(exclude_from_sim no)
-		(at 790.194 101.6 0)
+		(at 790.194 284.48 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -8715,7 +8781,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 116.84 0)
+		(at 780.034 124.46 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -8772,7 +8838,7 @@
 	)
 	(text_box "A2-X8"
 		(exclude_from_sim no)
-		(at 648.716 314.96 0)
+		(at 648.716 292.1 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -8829,7 +8895,7 @@
 	)
 	(text_box "Контакт 1-968857-1"
 		(exclude_from_sim no)
-		(at 790.194 353.06 0)
+		(at 790.194 337.82 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -8867,7 +8933,7 @@
 	)
 	(text_box "Датчик температуры ОЖ"
 		(exclude_from_sim no)
-		(at 466.09 513.08 0)
+		(at 513.08 513.08 0)
 		(size 71.12 7.62)
 		(margins 4 4 4 4)
 		(stroke
@@ -8908,7 +8974,7 @@
 	)
 	(text_box "Под пайку"
 		(exclude_from_sim no)
-		(at 790.194 284.48 0)
+		(at 790.194 177.8 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -8966,7 +9032,7 @@
 	)
 	(text_box ""
 		(exclude_from_sim no)
-		(at 790.194 429.26 0)
+		(at 790.194 231.14 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -8983,9 +9049,9 @@
 		)
 		(uuid "7c01402d-38da-4b8e-909a-7492ac41f9c4")
 	)
-	(text_box "Розетка на кабель GX12-4A"
+	(text_box "Вилка на кабель FQ24-8pin TJ-12"
 		(exclude_from_sim no)
-		(at 670.814 322.58 0)
+		(at 670.814 421.64 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -9004,7 +9070,7 @@
 	)
 	(text_box "12"
 		(exclude_from_sim no)
-		(at 648.716 193.04 0)
+		(at 648.716 345.44 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -9020,25 +9086,6 @@
 			)
 		)
 		(uuid "7c173ef4-ebd5-434d-a99e-8656497bb8d7")
-	)
-	(text_box "Конт"
-		(exclude_from_sim no)
-		(at 173.99 459.74 0)
-		(size 10.16 2.54)
-		(margins 1.5 1.5 1.5 1.5)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 2 2)
-			)
-		)
-		(uuid "7c61206d-8aa0-47ba-80fc-b233c55bc9a9")
 	)
 	(text_box "GND"
 		(exclude_from_sim no)
@@ -9061,7 +9108,7 @@
 	)
 	(text_box "13"
 		(exclude_from_sim no)
-		(at 648.716 200.66 0)
+		(at 648.716 368.3 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -9080,7 +9127,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 109.22 0)
+		(at 780.034 101.6 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -9212,25 +9259,6 @@
 		)
 		(uuid "7f01d6fd-ca0d-49a2-91fc-34d945d71c82")
 	)
-	(text_box "Кабель НВЦТ.0001.0000.260"
-		(exclude_from_sim no)
-		(at 670.814 223.52 0)
-		(size 109.22 7.62)
-		(margins 1.75 1.75 1.75 1.75)
-		(stroke
-			(width 0.5)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 3.5 3.5)
-			)
-		)
-		(uuid "7f029e4f-365c-4cf2-b1d1-3bf808b429a7")
-	)
 	(text_box "GND\n"
 		(exclude_from_sim no)
 		(at 382.27 57.15 0)
@@ -9311,7 +9339,7 @@
 	)
 	(text_box "8"
 		(exclude_from_sim no)
-		(at 648.716 162.56 0)
+		(at 648.716 276.86 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -9406,7 +9434,7 @@
 	)
 	(text_box "A2-X5"
 		(exclude_from_sim no)
-		(at 648.716 292.1 0)
+		(at 648.716 200.66 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -9501,7 +9529,7 @@
 	)
 	(text_box "Контакт 770520-1"
 		(exclude_from_sim no)
-		(at 790.194 299.72 0)
+		(at 790.194 307.34 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -9579,7 +9607,7 @@
 	)
 	(text_box "A2-X7"
 		(exclude_from_sim no)
-		(at 648.716 307.34 0)
+		(at 648.716 414.02 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -9751,6 +9779,25 @@
 		)
 		(uuid "88b7c94a-8afa-4ea7-a063-2aa960b645a2")
 	)
+	(text_box ""
+		(exclude_from_sim no)
+		(at 790.194 269.24 0)
+		(size 45.72 7.62)
+		(margins 1.75 1.75 1.75 1.75)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2 2)
+			)
+		)
+		(uuid "8982c36e-74e8-4f84-b884-01cb5984e93a")
+	)
 	(text_box "А8, А9"
 		(exclude_from_sim no)
 		(at 648.716 93.98 0)
@@ -9791,7 +9838,7 @@
 	)
 	(text_box "A2-X12"
 		(exclude_from_sim no)
-		(at 648.716 345.44 0)
+		(at 648.716 322.58 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -9829,7 +9876,7 @@
 	)
 	(text_box "5"
 		(exclude_from_sim no)
-		(at 648.716 139.7 0)
+		(at 648.716 193.04 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -9998,9 +10045,9 @@
 		)
 		(uuid "8e28a462-cd9a-4a95-9a84-4afb86335fef")
 	)
-	(text_box "2"
+	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 101.6 0)
+		(at 780.034 284.48 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -10019,7 +10066,7 @@
 	)
 	(text_box "A2-X4"
 		(exclude_from_sim no)
-		(at 648.716 284.48 0)
+		(at 648.716 177.8 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -10036,9 +10083,28 @@
 		)
 		(uuid "8eabb462-59a5-4f67-84ed-21a9fea5881f")
 	)
+	(text_box "Предохранитель мини 5А с держателем 16-0424"
+		(exclude_from_sim no)
+		(at 670.814 269.24 0)
+		(size 109.22 7.62)
+		(margins 1.75 1.75 1.75 1.75)
+		(stroke
+			(width 0.5)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 3.5 3.5)
+			)
+		)
+		(uuid "8ed86a93-33bc-4e86-a61c-8b7ee968e39c")
+	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 177.8 0)
+		(at 780.034 314.96 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -10095,7 +10161,7 @@
 	)
 	(text_box "3"
 		(exclude_from_sim no)
-		(at 648.716 124.46 0)
+		(at 648.716 147.32 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -10114,7 +10180,7 @@
 	)
 	(text_box "Под пайку"
 		(exclude_from_sim no)
-		(at 790.194 292.1 0)
+		(at 790.194 200.66 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -10190,7 +10256,7 @@
 	)
 	(text_box "Датчик температуры ОЖ"
 		(exclude_from_sim no)
-		(at 670.814 101.6 0)
+		(at 670.814 284.48 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -10361,7 +10427,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 124.46 0)
+		(at 780.034 147.32 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -10377,25 +10443,6 @@
 			)
 		)
 		(uuid "94905e53-2727-4082-ade7-576fbdc3959a")
-	)
-	(text_box "Клемная колодка"
-		(exclude_from_sim no)
-		(at 670.814 375.92 0)
-		(size 109.22 7.62)
-		(margins 1.75 1.75 1.75 1.75)
-		(stroke
-			(width 0.5)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 3.5 3.5)
-			)
-		)
-		(uuid "9692e4b3-668c-4a41-92a6-a92b21763d40")
 	)
 	(text_box "CAN_H"
 		(exclude_from_sim no)
@@ -10434,25 +10481,6 @@
 			)
 		)
 		(uuid "96e6b8e0-c3f4-46e3-8d34-b7e15f742d96")
-	)
-	(text_box "4"
-		(exclude_from_sim no)
-		(at 173.99 473.71 0)
-		(size 10.16 3.81)
-		(margins 1.5 1.5 1.5 1.5)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 2 2)
-			)
-		)
-		(uuid "96eb5ba8-c9dd-4393-aae1-f65560962cfd")
 	)
 	(text_box "3"
 		(exclude_from_sim no)
@@ -10535,7 +10563,7 @@
 	)
 	(text_box "14"
 		(exclude_from_sim no)
-		(at 648.716 208.28 0)
+		(at 648.716 391.16 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -10649,7 +10677,7 @@
 	)
 	(text_box ""
 		(exclude_from_sim no)
-		(at 790.194 254 0)
+		(at 790.194 398.78 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -10727,7 +10755,7 @@
 	)
 	(text_box "A1-X1"
 		(exclude_from_sim no)
-		(at 648.716 231.14 0)
+		(at 648.716 109.22 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -10763,9 +10791,9 @@
 		)
 		(uuid "9fb7c676-acb7-4b07-8550-cacf346b933a")
 	)
-	(text_box "Провод ПГУВ 1х0,5мм"
+	(text_box ""
 		(exclude_from_sim no)
-		(at 790.194 170.18 0)
+		(at 790.194 299.72 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -10822,7 +10850,7 @@
 	)
 	(text_box "Жгут НВЦТ.0001.0000.120"
 		(exclude_from_sim no)
-		(at 670.814 116.84 0)
+		(at 670.814 124.46 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -10835,6 +10863,9 @@
 		(effects
 			(font
 				(size 3.5 3.5)
+				(thickness 0.7)
+				(bold yes)
+				(italic yes)
 			)
 		)
 		(uuid "a1302afd-b464-438c-b643-e06e6eb1a264")
@@ -10879,7 +10910,7 @@
 	)
 	(text_box "Жгут НВЦТ.0001.0000.190"
 		(exclude_from_sim no)
-		(at 670.814 170.18 0)
+		(at 670.814 299.72 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -10892,13 +10923,16 @@
 		(effects
 			(font
 				(size 3.5 3.5)
+				(thickness 0.7)
+				(bold yes)
+				(italic yes)
 			)
 		)
 		(uuid "a3a2e688-ade0-49bd-ba38-79e29bd0e34e")
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 261.62 0)
+		(at 780.034 116.84 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -11012,7 +11046,7 @@
 	)
 	(text_box "Вилка на кабель 1-1418483-1"
 		(exclude_from_sim no)
-		(at 670.814 391.16 0)
+		(at 670.814 383.54 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -11278,9 +11312,9 @@
 		)
 		(uuid "a8d7d1e9-5b34-4303-9d12-868d4e50d855")
 	)
-	(text_box "A5-XT1"
+	(text_box "F1"
 		(exclude_from_sim no)
-		(at 648.716 406.4 0)
+		(at 648.716 238.76 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -11375,7 +11409,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 185.42 0)
+		(at 780.034 330.2 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -11394,7 +11428,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 307.34 0)
+		(at 780.034 414.02 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -11413,7 +11447,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 208.28 0)
+		(at 780.034 391.16 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -11470,7 +11504,7 @@
 	)
 	(text_box "Розетка на кабель 770680-5"
 		(exclude_from_sim no)
-		(at 670.814 299.72 0)
+		(at 670.814 307.34 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -11660,7 +11694,7 @@
 	)
 	(text_box "A7-X1"
 		(exclude_from_sim no)
-		(at 648.716 421.64 0)
+		(at 648.716 208.28 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -11679,7 +11713,7 @@
 	)
 	(text_box "Вилка на кабель 1-1418483-1"
 		(exclude_from_sim no)
-		(at 670.814 353.06 0)
+		(at 670.814 337.82 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -11715,9 +11749,9 @@
 		)
 		(uuid "add9dcfb-275d-46ab-aae7-5daae81c4e25")
 	)
-	(text_box "Клемная колодка"
+	(text_box "Наконечник ТМЛ 35-8-9"
 		(exclude_from_sim no)
-		(at 670.814 368.3 0)
+		(at 670.814 406.4 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -11733,25 +11767,6 @@
 			)
 		)
 		(uuid "aed1bfe8-f37e-4f38-ab76-edcae6e0a3b6")
-	)
-	(text_box "1"
-		(exclude_from_sim no)
-		(at 173.99 462.28 0)
-		(size 10.16 3.81)
-		(margins 1.5 1.5 1.5 1.5)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 2 2)
-			)
-		)
-		(uuid "aef9f617-5164-45b5-9bc9-b2db1a90bb7c")
 	)
 	(text_box "GND\n"
 		(exclude_from_sim no)
@@ -11793,7 +11808,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 170.18 0)
+		(at 780.034 299.72 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -11886,25 +11901,6 @@
 		)
 		(uuid "b18b0837-03e0-4401-872c-cf70f8b5b504")
 	)
-	(text_box "Кабель ПГВУЭ-35/5"
-		(exclude_from_sim no)
-		(at 790.194 223.52 0)
-		(size 45.72 7.62)
-		(margins 1.75 1.75 1.75 1.75)
-		(stroke
-			(width 0.5)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 3.5 3.5)
-			)
-		)
-		(uuid "b2290e71-4c35-4a5b-b8bb-c6afa3238706")
-	)
 	(text_box "Цепь"
 		(exclude_from_sim no)
 		(at 204.47 250.19 0)
@@ -11924,28 +11920,9 @@
 		)
 		(uuid "b234c6d7-defe-4161-9c18-bf5f4e92047d")
 	)
-	(text_box "-\n"
-		(exclude_from_sim no)
-		(at 184.15 481.33 0)
-		(size 19.05 3.81)
-		(margins 1.5 1.5 1.5 1.5)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 2 2)
-			)
-		)
-		(uuid "b2419de4-9453-481d-8709-986ecd73e0c1")
-	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 254 0)
+		(at 780.034 398.78 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -11980,6 +11957,25 @@
 			)
 		)
 		(uuid "b2cf774c-8eec-480f-8d2f-106b3c50a537")
+	)
+	(text_box "2\n"
+		(exclude_from_sim no)
+		(at 363.22 494.03 0)
+		(size 10.16 3.81)
+		(margins 1.5 1.5 1.5 1.5)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2 2)
+			)
+		)
+		(uuid "b36bf5a7-3668-492d-96f9-837879b9fbfa")
 	)
 	(text_box "30"
 		(exclude_from_sim no)
@@ -12057,25 +12053,6 @@
 		)
 		(uuid "b63cf1ff-09ed-449f-bd2a-0503ae16c295")
 	)
-	(text_box "-\n"
-		(exclude_from_sim no)
-		(at 184.15 488.95 0)
-		(size 19.05 3.81)
-		(margins 1.5 1.5 1.5 1.5)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 2 2)
-			)
-		)
-		(uuid "b6ad1bce-b49d-4e3d-b45c-8d2a486be9ca")
-	)
 	(text_box "NTC_AW_1_MC"
 		(exclude_from_sim no)
 		(at 101.6 119.38 0)
@@ -12113,25 +12090,6 @@
 			)
 		)
 		(uuid "b7554772-1fe0-4a5c-b646-8cac9996b2b1")
-	)
-	(text_box "VDC-"
-		(exclude_from_sim no)
-		(at 203.2 346.71 0)
-		(size 19.05 3.81)
-		(margins 1.5 1.5 1.5 1.5)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 2 2)
-			)
-		)
-		(uuid "b76be503-e96b-49f8-8cbb-4225ac608e2d")
 	)
 	(text_box "NTC_FW_2_MC"
 		(exclude_from_sim no)
@@ -12270,25 +12228,6 @@
 		)
 		(uuid "b8412fba-007e-476f-862a-fa2b815d87d1")
 	)
-	(text_box "CANH"
-		(exclude_from_sim no)
-		(at 184.15 466.09 0)
-		(size 19.05 3.81)
-		(margins 1.5 1.5 1.5 1.5)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 2 2)
-			)
-		)
-		(uuid "b854724e-60ea-479a-8cc6-5dde85a2fc12")
-	)
 	(text_box "~{COS}"
 		(exclude_from_sim no)
 		(at 204.47 210.82 0)
@@ -12348,7 +12287,7 @@
 	)
 	(text_box "Контакт 770520-1"
 		(exclude_from_sim no)
-		(at 790.194 261.62 0)
+		(at 790.194 116.84 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -12405,7 +12344,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 193.04 0)
+		(at 780.034 345.44 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -12558,7 +12497,7 @@
 	)
 	(text_box "Жгут НВЦТ.0001.0000.230"
 		(exclude_from_sim no)
-		(at 670.814 200.66 0)
+		(at 670.814 368.3 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -12571,6 +12510,9 @@
 		(effects
 			(font
 				(size 3.5 3.5)
+				(thickness 0.7)
+				(bold yes)
+				(italic yes)
 			)
 		)
 		(uuid "bec222cd-a187-4e6b-b420-b3d4d5d5861e")
@@ -12651,9 +12593,9 @@
 		)
 		(uuid "bf2a2dd1-985a-4937-8515-7149deb6ce60")
 	)
-	(text_box "Розетка на кабель GX12-4A"
+	(text_box "Вилка на кабель FQ24-8pin TJ-12"
 		(exclude_from_sim no)
-		(at 670.814 314.96 0)
+		(at 670.814 292.1 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -12691,7 +12633,7 @@
 	)
 	(text_box "Вилка на кабель FQ24-8pin TJ-12"
 		(exclude_from_sim no)
-		(at 670.814 307.34 0)
+		(at 670.814 414.02 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -12729,7 +12671,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 292.1 0)
+		(at 780.034 200.66 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -12767,7 +12709,7 @@
 	)
 	(text_box "Под пайку"
 		(exclude_from_sim no)
-		(at 790.194 276.86 0)
+		(at 790.194 154.94 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -12805,7 +12747,7 @@
 	)
 	(text_box "A4-X1"
 		(exclude_from_sim no)
-		(at 648.716 383.54 0)
+		(at 648.716 139.7 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -12862,7 +12804,7 @@
 	)
 	(text_box "A1-X2"
 		(exclude_from_sim no)
-		(at 648.716 238.76 0)
+		(at 648.716 353.06 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -12900,7 +12842,7 @@
 	)
 	(text_box "Жгут НВЦТ.0001.0000.240"
 		(exclude_from_sim no)
-		(at 670.814 208.28 0)
+		(at 670.814 391.16 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -12913,6 +12855,9 @@
 		(effects
 			(font
 				(size 3.5 3.5)
+				(thickness 0.7)
+				(bold yes)
+				(italic yes)
 			)
 		)
 		(uuid "c271bb48-7271-427f-befa-d4eb30568233")
@@ -12995,7 +12940,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 391.16 0)
+		(at 780.034 383.54 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -13131,7 +13076,7 @@
 	)
 	(text_box "Жгут НВЦТ.0001.0000.130"
 		(exclude_from_sim no)
-		(at 670.814 124.46 0)
+		(at 670.814 147.32 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -13144,6 +13089,9 @@
 		(effects
 			(font
 				(size 3.5 3.5)
+				(thickness 0.7)
+				(bold yes)
+				(italic yes)
 			)
 		)
 		(uuid "c60fa38d-0d2a-4e49-a082-bf86019aeeb0")
@@ -13167,9 +13115,9 @@
 		)
 		(uuid "c618eec1-f226-480b-9afc-c86740f7c4ef")
 	)
-	(text_box "Провод ПГУВ 1х1,5мм"
+	(text_box ""
 		(exclude_from_sim no)
-		(at 790.194 177.8 0)
+		(at 790.194 314.96 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -13357,28 +13305,9 @@
 		)
 		(uuid "cab7841b-f8ff-4c99-8813-b8db228c4722")
 	)
-	(text_box "Цепь"
+	(text_box "2"
 		(exclude_from_sim no)
-		(at 184.15 459.74 0)
-		(size 19.05 2.54)
-		(margins 1.5 1.5 1.5 1.5)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 2 2)
-			)
-		)
-		(uuid "cb503fdf-6b44-4101-8062-566d088137e1")
-	)
-	(text_box "1"
-		(exclude_from_sim no)
-		(at 780.034 368.3 0)
+		(at 780.034 406.4 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -13435,7 +13364,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 231.14 0)
+		(at 780.034 109.22 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -13492,7 +13421,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 238.76 0)
+		(at 780.034 353.06 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -13587,7 +13516,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 345.44 0)
+		(at 780.034 322.58 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -13604,9 +13533,9 @@
 		)
 		(uuid "cef0b2e4-a8df-42fa-954b-d48b09085f9d")
 	)
-	(text_box "Кабель ПГВУЭ-35/5"
+	(text_box ""
 		(exclude_from_sim no)
-		(at 790.194 193.04 0)
+		(at 790.194 345.44 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -13796,7 +13725,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 648.716 109.22 0)
+		(at 648.716 101.6 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -13832,9 +13761,9 @@
 		)
 		(uuid "d2315b23-8ff7-461b-b8e7-c1895c08e387")
 	)
-	(text_box "Под пайку"
+	(text_box "Опционально"
 		(exclude_from_sim no)
-		(at 790.194 307.34 0)
+		(at 790.194 414.02 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -13966,9 +13895,9 @@
 		)
 		(uuid "d49487d9-633b-4d17-b35c-800d0bc0eca6")
 	)
-	(text_box "6"
+	(text_box "1"
 		(exclude_from_sim no)
-		(at 173.99 481.33 0)
+		(at 363.22 490.22 0)
 		(size 10.16 3.81)
 		(margins 1.5 1.5 1.5 1.5)
 		(stroke
@@ -13983,7 +13912,7 @@
 				(size 2 2)
 			)
 		)
-		(uuid "d55e6bc0-baa2-473c-98fe-475745b86237")
+		(uuid "d552d8d9-7bac-4413-a193-3e75c95284d0")
 	)
 	(text_box "9"
 		(exclude_from_sim no)
@@ -14023,9 +13952,9 @@
 		)
 		(uuid "d579cc00-dae0-4cd2-8382-456de15a2b20")
 	)
-	(text_box "Клемная колодка"
+	(text_box "Наконечник ТМЛ 35-8-9"
 		(exclude_from_sim no)
-		(at 670.814 398.78 0)
+		(at 670.814 360.68 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -14099,9 +14028,9 @@
 		)
 		(uuid "d6f9d9d9-0b7d-4d79-b7a7-10d16fd92dac")
 	)
-	(text_box "Провод ПГУВ 1х0,5мм"
+	(text_box ""
 		(exclude_from_sim no)
-		(at 790.194 162.56 0)
+		(at 790.194 276.86 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -14139,7 +14068,7 @@
 	)
 	(text_box "A2-X1"
 		(exclude_from_sim no)
-		(at 648.716 261.62 0)
+		(at 648.716 116.84 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -14291,7 +14220,7 @@
 	)
 	(text_box "A2-X6"
 		(exclude_from_sim no)
-		(at 648.716 299.72 0)
+		(at 648.716 307.34 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -14329,7 +14258,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 200.66 0)
+		(at 780.034 368.3 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -14365,9 +14294,9 @@
 		)
 		(uuid "dac4e819-44a4-4acb-a820-0d300f21d33e")
 	)
-	(text_box "Провод ПГУВ 1х0,5мм"
+	(text_box ""
 		(exclude_from_sim no)
-		(at 790.194 147.32 0)
+		(at 790.194 215.9 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -14538,7 +14467,7 @@
 	)
 	(text_box "Под пайку"
 		(exclude_from_sim no)
-		(at 790.194 337.82 0)
+		(at 790.194 223.52 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -14574,25 +14503,6 @@
 		)
 		(uuid "dd25bdce-6a4c-46b0-9b64-91ac7462137f")
 	)
-	(text_box "1"
-		(exclude_from_sim no)
-		(at 780.034 375.92 0)
-		(size 10.16 7.62)
-		(margins 1.75 1.75 1.75 1.75)
-		(stroke
-			(width 0.5)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 3.5 3.5)
-			)
-		)
-		(uuid "dda2bc4d-4bd0-44cb-850b-6fc74e4921fc")
-	)
 	(text_box "6"
 		(exclude_from_sim no)
 		(at 406.4 76.2 0)
@@ -14612,9 +14522,9 @@
 		)
 		(uuid "ddce466a-7d0c-42e8-9c17-2289061cff12")
 	)
-	(text_box "Вилка на кабель FQ24-4pin TJ-12"
+	(text_box "Вилка на кабель SP1310/P7IN"
 		(exclude_from_sim no)
-		(at 670.814 421.64 0)
+		(at 670.814 208.28 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -14690,7 +14600,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 269.24 0)
+		(at 780.034 132.08 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -14709,7 +14619,7 @@
 	)
 	(text_box "10\n"
 		(exclude_from_sim no)
-		(at 648.716 177.8 0)
+		(at 648.716 314.96 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -14804,7 +14714,7 @@
 	)
 	(text_box "A2-X11"
 		(exclude_from_sim no)
-		(at 648.716 337.82 0)
+		(at 648.716 223.52 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -14842,7 +14752,7 @@
 	)
 	(text_box "Вилка на кабель FQ24-8pin TJ-12"
 		(exclude_from_sim no)
-		(at 670.814 276.86 0)
+		(at 670.814 154.94 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -14880,7 +14790,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 162.56 0)
+		(at 780.034 276.86 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -14938,7 +14848,7 @@
 	)
 	(text_box "Вилка на кабель 1-1418483-1"
 		(exclude_from_sim no)
-		(at 670.814 246.38 0)
+		(at 670.814 375.92 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -14995,7 +14905,7 @@
 	)
 	(text_box "A9-X1"
 		(exclude_from_sim no)
-		(at 648.716 436.88 0)
+		(at 648.716 261.62 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -15033,7 +14943,7 @@
 	)
 	(text_box "Вилка на кабель TE 1-2177063-1"
 		(exclude_from_sim no)
-		(at 670.814 238.76 0)
+		(at 670.814 353.06 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -15052,7 +14962,7 @@
 	)
 	(text_box "Вилка на кабель FQ24-10TJ-12"
 		(exclude_from_sim no)
-		(at 670.814 284.48 0)
+		(at 670.814 177.8 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -15069,28 +14979,9 @@
 		)
 		(uuid "e534be79-1a7d-4dc4-86c1-aba0a563b72a")
 	)
-	(text_box "CANL"
-		(exclude_from_sim no)
-		(at 184.15 485.14 0)
-		(size 19.05 3.81)
-		(margins 1.5 1.5 1.5 1.5)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 2 2)
-			)
-		)
-		(uuid "e573edd9-e7ef-424c-8dfd-bc2d48825c43")
-	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 154.94 0)
+		(at 780.034 246.38 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -15147,7 +15038,7 @@
 	)
 	(text_box "2"
 		(exclude_from_sim no)
-		(at 648.716 116.84 0)
+		(at 648.716 124.46 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -15204,7 +15095,7 @@
 	)
 	(text_box "A2-X13"
 		(exclude_from_sim no)
-		(at 648.716 353.06 0)
+		(at 648.716 337.82 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -15242,7 +15133,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 421.64 0)
+		(at 780.034 208.28 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -15259,24 +15150,24 @@
 		)
 		(uuid "e881ac2a-5bca-476e-975e-19cd148fdea6")
 	)
-	(text_box "8"
+	(text_box "1"
 		(exclude_from_sim no)
-		(at 173.99 488.95 0)
-		(size 10.16 3.81)
-		(margins 1.5 1.5 1.5 1.5)
+		(at 780.034 269.24 0)
+		(size 10.16 7.62)
+		(margins 1.75 1.75 1.75 1.75)
 		(stroke
-			(width 0)
-			(type default)
+			(width 0.5)
+			(type solid)
 		)
 		(fill
 			(type none)
 		)
 		(effects
 			(font
-				(size 2 2)
+				(size 3.5 3.5)
 			)
 		)
-		(uuid "e95edc2e-7346-4874-a06d-a3a3d6237c08")
+		(uuid "e990ff34-de39-4665-b29b-b1e6e9675b23")
 	)
 	(text_box "1"
 		(exclude_from_sim no)
@@ -15432,9 +15323,9 @@
 		)
 		(uuid "ec5f80b7-2041-4360-801d-dfe45b09d667")
 	)
-	(text_box "Провод ПГУВ 1х0,5мм"
+	(text_box ""
 		(exclude_from_sim no)
-		(at 790.194 139.7 0)
+		(at 790.194 193.04 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -15489,9 +15380,9 @@
 		)
 		(uuid "ecc14123-1731-4626-98fa-6a38d48baf7b")
 	)
-	(text_box "Наконечник ТМЛ 35-8-9"
+	(text_box ""
 		(exclude_from_sim no)
-		(at 790.194 368.3 0)
+		(at 790.194 406.4 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -15527,25 +15418,6 @@
 		)
 		(uuid "ed16e3ec-6886-4528-a3d4-2539fe02f6d5")
 	)
-	(text_box "1"
-		(exclude_from_sim no)
-		(at 780.034 215.9 0)
-		(size 10.16 7.62)
-		(margins 1.75 1.75 1.75 1.75)
-		(stroke
-			(width 0.5)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 3.5 3.5)
-			)
-		)
-		(uuid "ed364a69-321f-4baa-9668-f7731739f4bd")
-	)
 	(text_box "31"
 		(exclude_from_sim no)
 		(at 336.55 171.45 0)
@@ -15565,9 +15437,9 @@
 		)
 		(uuid "ee1c1337-b658-412a-be66-1d433cfc1b8c")
 	)
-	(text_box "Провод ПГУВ 1х0,5мм"
+	(text_box ""
 		(exclude_from_sim no)
-		(at 790.194 124.46 0)
+		(at 790.194 147.32 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -15605,7 +15477,7 @@
 	)
 	(text_box "Контакт 770520-1"
 		(exclude_from_sim no)
-		(at 790.194 269.24 0)
+		(at 790.194 132.08 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -15624,7 +15496,7 @@
 	)
 	(text_box "Розетка на кабель 776164-1"
 		(exclude_from_sim no)
-		(at 670.814 261.62 0)
+		(at 670.814 116.84 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -15662,7 +15534,7 @@
 	)
 	(text_box "A2-X2"
 		(exclude_from_sim no)
-		(at 648.716 269.24 0)
+		(at 648.716 132.08 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -15738,7 +15610,7 @@
 	)
 	(text_box "Вилка на кабель 1-1418483-1"
 		(exclude_from_sim no)
-		(at 670.814 345.44 0)
+		(at 670.814 322.58 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -15795,7 +15667,7 @@
 	)
 	(text_box "Контакт 1241380-1"
 		(exclude_from_sim no)
-		(at 790.194 383.54 0)
+		(at 790.194 139.7 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -15833,7 +15705,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 314.96 0)
+		(at 780.034 292.1 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -15909,7 +15781,7 @@
 	)
 	(text_box "Контакт 770520-1"
 		(exclude_from_sim no)
-		(at 790.194 360.68 0)
+		(at 790.194 162.56 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -15945,6 +15817,25 @@
 		)
 		(uuid "f3c797b9-fca7-4dd3-bfbe-25ed87ef5686")
 	)
+	(text_box "1"
+		(exclude_from_sim no)
+		(at 267.97 491.49 0)
+		(size 10.16 3.81)
+		(margins 1.5 1.5 1.5 1.5)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2 2)
+			)
+		)
+		(uuid "f4df8620-1857-49d5-8131-128673a001c3")
+	)
 	(text_box "16"
 		(exclude_from_sim no)
 		(at 120.65 168.91 0)
@@ -15966,7 +15857,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 406.4 0)
+		(at 780.034 238.76 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -15983,9 +15874,9 @@
 		)
 		(uuid "f53d9e02-fde2-4f3c-b34a-bc2d65abe8f3")
 	)
-	(text_box "Розетка на кабель РГА-3П"
+	(text_box "Розетка на кабель РГА-2П"
 		(exclude_from_sim no)
-		(at 670.814 429.26 0)
+		(at 670.814 231.14 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -16099,7 +15990,7 @@
 	)
 	(text_box "Контакт 1-968857-1"
 		(exclude_from_sim no)
-		(at 790.194 391.16 0)
+		(at 790.194 383.54 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -16139,7 +16030,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 780.034 414.02 0)
+		(at 780.034 185.42 0)
 		(size 10.16 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -16175,9 +16066,9 @@
 		)
 		(uuid "f74b1cb0-7cdc-4fbe-b1dc-33b0da198297")
 	)
-	(text_box "Наконечник ТМЛ 35-8-9"
+	(text_box ""
 		(exclude_from_sim no)
-		(at 790.194 406.4 0)
+		(at 790.194 238.76 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -16193,6 +16084,25 @@
 			)
 		)
 		(uuid "f79af109-5607-46de-90b5-d8d6d2fc33b2")
+	)
+	(text_box "2\n"
+		(exclude_from_sim no)
+		(at 267.97 495.3 0)
+		(size 10.16 3.81)
+		(margins 1.5 1.5 1.5 1.5)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2 2)
+			)
+		)
+		(uuid "f7a853c7-15fc-494d-b56b-f270e745e029")
 	)
 	(text_box "ТЭД"
 		(exclude_from_sim no)
@@ -16233,25 +16143,6 @@
 		)
 		(uuid "f80c587b-6ca5-4256-92dc-dabc3989569b")
 	)
-	(text_box "5"
-		(exclude_from_sim no)
-		(at 173.99 477.52 0)
-		(size 10.16 3.81)
-		(margins 1.5 1.5 1.5 1.5)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 2 2)
-			)
-		)
-		(uuid "f964d8ba-73a7-4695-9631-6ed8c0cbf81a")
-	)
 	(text_box "8"
 		(exclude_from_sim no)
 		(at 336.55 224.79 0)
@@ -16290,9 +16181,9 @@
 		)
 		(uuid "fa298e8c-6bd2-4517-8325-ca04c979b962")
 	)
-	(text_box "Розетка на кабель РГА-3П"
+	(text_box "Розетка на кабель РГА-2П"
 		(exclude_from_sim no)
-		(at 670.814 436.88 0)
+		(at 670.814 261.62 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -16327,25 +16218,6 @@
 			)
 		)
 		(uuid "fa4e4e96-617e-4b96-9c1d-dafd9e7701ac")
-	)
-	(text_box "-"
-		(exclude_from_sim no)
-		(at 184.15 462.28 0)
-		(size 19.05 3.81)
-		(margins 1.5 1.5 1.5 1.5)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 2 2)
-			)
-		)
-		(uuid "fa9e2a9c-d320-471b-ab0c-0cd2ec2a9e46")
 	)
 	(text_box "GND_CAN"
 		(exclude_from_sim no)
@@ -16404,9 +16276,9 @@
 		)
 		(uuid "fafb7433-27b3-4ecd-b511-993fe17ca54e")
 	)
-	(text_box "Клемная колодка"
+	(text_box "Предохранитель мини 5А с держателем 16-0424"
 		(exclude_from_sim no)
-		(at 670.814 406.4 0)
+		(at 670.814 238.76 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -16425,7 +16297,7 @@
 	)
 	(text_box "A4-X2"
 		(exclude_from_sim no)
-		(at 648.716 391.16 0)
+		(at 648.716 383.54 0)
 		(size 22.098 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -16501,7 +16373,7 @@
 	)
 	(text_box "Вилка на кабель FQ24-4pin TJ-12"
 		(exclude_from_sim no)
-		(at 670.814 337.82 0)
+		(at 670.814 223.52 0)
 		(size 109.22 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -16597,9 +16469,9 @@
 		)
 		(uuid "ff2935d5-8568-400c-95c0-e6aa1b92b524")
 	)
-	(text_box "Провод ПГУВ 1х1,5мм"
+	(text_box ""
 		(exclude_from_sim no)
-		(at 790.194 185.42 0)
+		(at 790.194 330.2 0)
 		(size 45.72 7.62)
 		(margins 1.75 1.75 1.75 1.75)
 		(stroke
@@ -16633,6 +16505,15 @@
 			(type default)
 		)
 		(uuid "00e58890-b3ea-4c1b-90c6-ada525f2f6a8")
+	)
+	(bus_entry
+		(at 435.61 320.04)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02670d92-ebe0-4041-ac5c-ba756136abbb")
 	)
 	(bus_entry
 		(at 134.62 137.16)
@@ -16707,7 +16588,7 @@
 		(uuid "11ca1c7f-0b53-48c4-9feb-ce3e40065b61")
 	)
 	(bus_entry
-		(at 448.31 294.64)
+		(at 495.3 294.64)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -16806,7 +16687,7 @@
 		(uuid "1d04d8e8-e2fc-474d-87cc-5847aba246c5")
 	)
 	(bus_entry
-		(at 448.31 290.83)
+		(at 495.3 290.83)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -16831,6 +16712,24 @@
 			(type default)
 		)
 		(uuid "21f46097-792e-41b7-9456-9a277755423b")
+	)
+	(bus_entry
+		(at 262.89 494.03)
+		(size -2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22f12182-f900-4ba7-909f-a28109f5c5e0")
+	)
+	(bus_entry
+		(at 358.14 492.76)
+		(size -2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23846a1c-a92d-468b-ae11-64eeefd36497")
 	)
 	(bus_entry
 		(at 134.62 129.54)
@@ -16914,7 +16813,7 @@
 		(uuid "311de48e-5d8c-4b71-a3f9-9753ed324686")
 	)
 	(bus_entry
-		(at 448.31 279.4)
+		(at 495.3 279.4)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -16941,6 +16840,15 @@
 		(uuid "3453b3f7-87d5-438b-b30e-349d691a79c4")
 	)
 	(bus_entry
+		(at 435.61 335.28)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "347a0bc4-1052-4f11-9242-bc4f2d1d2242")
+	)
+	(bus_entry
 		(at 134.62 186.69)
 		(size 2.54 -2.54)
 		(stroke
@@ -16957,6 +16865,15 @@
 			(type default)
 		)
 		(uuid "37599d37-3e30-45f5-960c-2d0090d3f9d1")
+	)
+	(bus_entry
+		(at 435.61 323.85)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "378215af-73d0-496e-b15f-ae6b02125740")
 	)
 	(bus_entry
 		(at 325.12 368.3)
@@ -17031,7 +16948,7 @@
 		(uuid "3ebf3ec3-1d75-4588-869a-6f77ea07cffd")
 	)
 	(bus_entry
-		(at 448.31 306.07)
+		(at 495.3 306.07)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -17139,6 +17056,15 @@
 		(uuid "4d74ff04-b815-4606-8c85-0a393d019076")
 	)
 	(bus_entry
+		(at 435.61 331.47)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4eaa012f-994f-416c-85b5-8cb7767cac39")
+	)
+	(bus_entry
 		(at 332.74 135.89)
 		(size -2.54 -2.54)
 		(stroke
@@ -17148,7 +17074,7 @@
 		(uuid "517754a3-1900-45cb-8193-95925c53fbce")
 	)
 	(bus_entry
-		(at 448.31 287.02)
+		(at 495.3 287.02)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -17164,6 +17090,15 @@
 			(type default)
 		)
 		(uuid "54b90e4e-dc74-4be7-a071-127223cb917d")
+	)
+	(bus_entry
+		(at 435.61 257.81)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55623dcb-0667-45d7-ac50-3990c47cb6f1")
 	)
 	(bus_entry
 		(at 332.74 93.98)
@@ -17211,6 +17146,15 @@
 		(uuid "59201ff3-ebf5-4229-8451-47249b960ddb")
 	)
 	(bus_entry
+		(at 435.61 254)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "592a648a-0b9c-4555-bd27-450c5e179b53")
+	)
+	(bus_entry
 		(at 316.23 303.53)
 		(size -2.54 2.54)
 		(stroke
@@ -17254,6 +17198,15 @@
 			(type default)
 		)
 		(uuid "5fbbd0ce-ad96-4741-99c0-6e3324431ed4")
+	)
+	(bus_entry
+		(at 435.61 246.38)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fd8e605-c6a9-4fb5-815b-26647d70339e")
 	)
 	(bus_entry
 		(at 185.42 237.49)
@@ -17418,6 +17371,15 @@
 		(uuid "79a8f79d-4741-4882-920a-ba655b3e1853")
 	)
 	(bus_entry
+		(at 435.61 261.62)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b29f30e-c2e2-423e-a90e-3e0ba58297ac")
+	)
+	(bus_entry
 		(at 134.62 209.55)
 		(size 2.54 -2.54)
 		(stroke
@@ -17425,6 +17387,15 @@
 			(type default)
 		)
 		(uuid "7b60c2b6-6fc1-43ed-81f0-1a0b2543cec5")
+	)
+	(bus_entry
+		(at 435.61 327.66)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d36c5a9-3c64-4d8d-ab50-339f814abc49")
 	)
 	(bus_entry
 		(at 134.62 224.79)
@@ -17497,6 +17468,15 @@
 			(type default)
 		)
 		(uuid "87e16a58-eb93-43a1-8682-9bae33580582")
+	)
+	(bus_entry
+		(at 435.61 242.57)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8dc3d7fc-6a27-4c5a-859b-8925f10adaa0")
 	)
 	(bus_entry
 		(at 322.58 213.36)
@@ -17643,15 +17623,6 @@
 		(uuid "a24fe3f2-c52a-4ad6-8a7d-3e98ead780bc")
 	)
 	(bus_entry
-		(at 170.18 468.63)
-		(size -2.54 -2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a364d6d1-6edf-4d2c-a514-0e87dbb8bd9e")
-	)
-	(bus_entry
 		(at 435.61 63.5)
 		(size 2.54 -2.54)
 		(stroke
@@ -17679,13 +17650,22 @@
 		(uuid "ae9af7c4-83a5-42d4-8f23-1c695ea225a7")
 	)
 	(bus_entry
-		(at 448.31 283.21)
+		(at 495.3 283.21)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b056eefe-39b8-4cde-8838-a313e2e3ec2b")
+	)
+	(bus_entry
+		(at 435.61 339.09)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2f5befe-cc62-4586-b1a4-14415aa48aa9")
 	)
 	(bus_entry
 		(at 332.74 387.35)
@@ -17695,15 +17675,6 @@
 			(type default)
 		)
 		(uuid "b40a5858-7c66-4b3d-b6b9-cb11765a82d5")
-	)
-	(bus_entry
-		(at 170.18 487.68)
-		(size -2.54 -2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b5c2145c-15ec-4f36-8bb1-d8636edc4fc1")
 	)
 	(bus_entry
 		(at 134.62 220.98)
@@ -17760,6 +17731,15 @@
 		(uuid "c26edd22-0aff-4c18-b629-72356d1f3a87")
 	)
 	(bus_entry
+		(at 435.61 342.9)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c777759d-f334-4966-932d-1e688510046b")
+	)
+	(bus_entry
 		(at 185.42 203.2)
 		(size 2.54 2.54)
 		(stroke
@@ -17785,15 +17765,6 @@
 			(type default)
 		)
 		(uuid "d01024e4-d101-463a-b996-6f269ac0d005")
-	)
-	(bus_entry
-		(at 358.14 543.56)
-		(size -2.54 -2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d32574f5-a6ef-4830-a878-6dac652ee296")
 	)
 	(bus_entry
 		(at 134.62 217.17)
@@ -17877,7 +17848,7 @@
 		(uuid "dbfa2c72-a269-4543-8aab-a0b07e90ed0e")
 	)
 	(bus_entry
-		(at 448.31 302.26)
+		(at 495.3 302.26)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -17911,6 +17882,15 @@
 			(type default)
 		)
 		(uuid "e0b7c306-fcb9-4b56-84a2-ebd4e8591eb5")
+	)
+	(bus_entry
+		(at 435.61 250.19)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e108ab41-e9ca-4630-a5fc-5c2febbd6d81")
 	)
 	(bus_entry
 		(at 435.61 101.6)
@@ -17958,7 +17938,7 @@
 		(uuid "e57a5b61-931c-4095-a3e3-c193a808b420")
 	)
 	(bus_entry
-		(at 448.31 298.45)
+		(at 495.3 298.45)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -18021,6 +18001,24 @@
 		(uuid "ec022644-082e-411b-b3fe-7b82122b659c")
 	)
 	(bus_entry
+		(at 435.61 238.76)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec7e4219-9a7c-4364-a08d-87ff85998309")
+	)
+	(bus_entry
+		(at 435.61 265.43)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecda308d-e750-4eae-b2de-3048e5eff9a0")
+	)
+	(bus_entry
 		(at 134.62 160.02)
 		(size 2.54 -2.54)
 		(stroke
@@ -18057,13 +18055,13 @@
 		(uuid "f0737df2-6760-47dd-b315-195fb4f1dc14")
 	)
 	(bus_entry
-		(at 262.89 543.56)
-		(size -2.54 -2.54)
+		(at 435.61 346.71)
+		(size 2.54 -2.54)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f5dd266b-f65f-45c2-9427-aab382d779e4")
+		(uuid "f1c1a964-1ea3-438b-acc0-d95c0f803f46")
 	)
 	(bus_entry
 		(at 134.62 240.03)
@@ -18247,6 +18245,16 @@
 	)
 	(polyline
 		(pts
+			(xy 474.976 335.28) (xy 476.246 336.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04dedcfe-bb3a-4deb-8017-b88806ce22a4")
+	)
+	(polyline
+		(pts
 			(xy 474.98 116.84) (xy 476.25 118.11)
 		)
 		(stroke
@@ -18277,13 +18285,23 @@
 	)
 	(bus
 		(pts
-			(xy 450.85 308.61) (xy 450.85 529.59)
+			(xy 497.84 308.61) (xy 497.84 529.59)
 		)
 		(stroke
 			(width 1)
 			(type default)
 		)
 		(uuid "0757a025-9563-4d5f-8684-d06f3200974b")
+	)
+	(polyline
+		(pts
+			(xy 474.976 256.54) (xy 476.246 255.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07eba60f-48b8-451b-8c7a-e5afea71f31e")
 	)
 	(polyline
 		(pts
@@ -18294,6 +18312,16 @@
 			(type default)
 		)
 		(uuid "07f748dc-9f9b-4ba8-9534-6cc8f5c2c08f")
+	)
+	(wire
+		(pts
+			(xy 416.56 257.81) (xy 435.61 257.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08401eee-7243-4107-a94c-c90bb55e5e2d")
 	)
 	(bus
 		(pts
@@ -18415,6 +18443,16 @@
 		)
 		(uuid "0ca16405-55d1-4316-917c-11feac2770f0")
 	)
+	(wire
+		(pts
+			(xy 262.89 497.84) (xy 267.97 497.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0cc98468-d668-4a4a-a5b6-1105efeae6ba")
+	)
 	(bus
 		(pts
 			(xy 137.16 123.19) (xy 137.16 119.38)
@@ -18457,7 +18495,7 @@
 	)
 	(wire
 		(pts
-			(xy 416.56 294.64) (xy 448.31 294.64)
+			(xy 416.56 294.64) (xy 495.3 294.64)
 		)
 		(stroke
 			(width 0)
@@ -18544,6 +18582,16 @@
 			(type default)
 		)
 		(uuid "10735f35-56a1-41c9-bbc4-dedd43864ba4")
+	)
+	(polyline
+		(pts
+			(xy 457.196 336.55) (xy 476.246 336.55)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "10ce8d5b-2d31-4c39-8c60-fe5e241f2365")
 	)
 	(bus
 		(pts
@@ -18648,6 +18696,26 @@
 	)
 	(polyline
 		(pts
+			(xy 474.976 246.38) (xy 476.246 247.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1370e549-1525-4b49-a937-cba16410ec92")
+	)
+	(wire
+		(pts
+			(xy 416.56 327.66) (xy 435.61 327.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "137e8a27-1d22-4893-8882-0cbc82cba60c")
+	)
+	(polyline
+		(pts
 			(xy 457.2 118.11) (xy 476.25 118.11)
 		)
 		(stroke
@@ -18665,6 +18733,26 @@
 			(type default)
 		)
 		(uuid "13fab2b3-3205-480a-b4ea-eb74db458179")
+	)
+	(polyline
+		(pts
+			(xy 474.976 320.04) (xy 476.246 321.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "150b5f13-68db-4378-a58b-c421648a156d")
+	)
+	(wire
+		(pts
+			(xy 287.02 494.03) (xy 287.02 497.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15a78ed2-f5ac-48ff-8b44-519f1166ac3b")
 	)
 	(bus
 		(pts
@@ -18708,6 +18796,16 @@
 	)
 	(polyline
 		(pts
+			(xy 438 263) (xy 438 233)
+		)
+		(stroke
+			(width 1)
+			(type dash)
+		)
+		(uuid "176dcccf-9378-4341-ad7f-88512689aea3")
+	)
+	(polyline
+		(pts
 			(xy 474.98 101.6) (xy 476.25 102.87)
 		)
 		(stroke
@@ -18715,6 +18813,16 @@
 			(type default)
 		)
 		(uuid "177d3e8b-488a-4568-9fc4-9f391434c905")
+	)
+	(polyline
+		(pts
+			(xy 440 231) (xy 455 231)
+		)
+		(stroke
+			(width 1)
+			(type dash)
+		)
+		(uuid "185b2f6e-a202-4f40-a845-ff8a62491fa3")
 	)
 	(wire
 		(pts
@@ -18805,6 +18913,16 @@
 			(type default)
 		)
 		(uuid "1d73e367-8338-4137-a627-73585d2812e2")
+	)
+	(polyline
+		(pts
+			(xy 474.976 337.82) (xy 476.246 336.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e31bce2-17e5-47a5-812a-76e70139c55a")
 	)
 	(polyline
 		(pts
@@ -18906,6 +19024,26 @@
 		)
 		(uuid "229663f2-3095-44d3-a887-ae82ab358225")
 	)
+	(polyline
+		(pts
+			(xy 474.976 335.28) (xy 476.246 336.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22d368ef-9a9f-4a08-81bd-5bfafc930067")
+	)
+	(polyline
+		(pts
+			(xy 457.196 259.08) (xy 476.246 259.08)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "23048a45-dff0-4d7d-bb1f-99a52deed104")
+	)
 	(bus
 		(pts
 			(xy 138.43 392.43) (xy 138.43 389.89)
@@ -18976,6 +19114,26 @@
 			(type default)
 		)
 		(uuid "26c36ba3-8c4d-4e22-adb1-076e700ee309")
+	)
+	(polyline
+		(pts
+			(xy 474.976 261.62) (xy 476.246 262.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26d2aef3-fa69-4b5e-b759-666490775af8")
+	)
+	(polyline
+		(pts
+			(xy 474.976 237.49) (xy 476.246 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26e9efca-48db-4946-b8f8-844e516f4227")
 	)
 	(wire
 		(pts
@@ -19128,6 +19286,16 @@
 		)
 		(uuid "2c592727-5431-4106-8c0c-e4415fecfaae")
 	)
+	(wire
+		(pts
+			(xy 416.56 238.76) (xy 435.61 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cba3d9d-d964-4f56-9d64-3364deb24a95")
+	)
 	(bus
 		(pts
 			(xy 438.15 110.49) (xy 438.15 114.3)
@@ -19137,6 +19305,16 @@
 			(type default)
 		)
 		(uuid "2cbb3a43-eccb-481a-a7a3-43b6edba9672")
+	)
+	(polyline
+		(pts
+			(xy 474.976 254) (xy 476.246 255.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d4cf4ad-535e-48da-ae13-29e3ed5ababa")
 	)
 	(bus
 		(pts
@@ -19148,25 +19326,25 @@
 		)
 		(uuid "2e4cd716-e3d5-45d3-83b7-ce6177cacc45")
 	)
-	(bus
+	(polyline
 		(pts
-			(xy 167.64 485.14) (xy 167.64 466.09)
-		)
-		(stroke
-			(width 1)
-			(type default)
-		)
-		(uuid "2e6d8d03-fdd1-4d5e-bf8c-0d0640975863")
-	)
-	(wire
-		(pts
-			(xy 170.18 468.63) (xy 173.99 468.63)
+			(xy 474.976 326.39) (xy 476.246 325.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2f1c5f77-b630-4fa0-a1b9-1b00105156a8")
+		(uuid "2ec13f8b-b36c-4f88-8c9b-99db294b87ea")
+	)
+	(polyline
+		(pts
+			(xy 457.196 340.36) (xy 476.246 340.36)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "2f7e4e7d-d128-4d99-a51c-4bd9ba5adf67")
 	)
 	(bus
 		(pts
@@ -19247,6 +19425,16 @@
 			(type default)
 		)
 		(uuid "33bbf5ef-dd55-4bae-b661-419468f7519d")
+	)
+	(polyline
+		(pts
+			(xy 474.976 245.11) (xy 476.246 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "346ca556-23a8-44dd-8b92-587fcd8c4aa2")
 	)
 	(bus
 		(pts
@@ -19389,6 +19577,16 @@
 		)
 		(uuid "3b2ff4ac-a2b7-40a6-a629-a60f602d4fe0")
 	)
+	(polyline
+		(pts
+			(xy 455 231) (xy 457 233)
+		)
+		(stroke
+			(width 1)
+			(type dash)
+		)
+		(uuid "3b6aa4d4-27d6-4b07-af30-5ad2cfc79392")
+	)
 	(bus
 		(pts
 			(xy 185.42 210.82) (xy 185.42 207.01)
@@ -19429,6 +19627,16 @@
 		)
 		(uuid "3daa7470-abe4-4fe0-aadd-a9eb0404dfa6")
 	)
+	(polyline
+		(pts
+			(xy 457.196 247.65) (xy 476.246 247.65)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "3e9fdbc7-4382-4b6d-b33e-c5e7bf494d61")
+	)
 	(bus
 		(pts
 			(xy 322.58 224.79) (xy 322.58 220.98)
@@ -19461,6 +19669,16 @@
 	)
 	(wire
 		(pts
+			(xy 373.38 496.57) (xy 382.27 496.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fc17138-ab3e-43ef-b5d2-f9a562f3b043")
+	)
+	(wire
+		(pts
 			(xy 336.55 170.18) (xy 332.74 170.18)
 		)
 		(stroke
@@ -19479,6 +19697,16 @@
 		)
 		(uuid "410bdf30-2ebb-4113-94d1-d9b1f1f2048e")
 	)
+	(polyline
+		(pts
+			(xy 457.196 243.84) (xy 476.246 243.84)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "41124ab8-961e-4b50-a1f4-502a1caae34d")
+	)
 	(bus
 		(pts
 			(xy 330.2 389.89) (xy 330.2 393.7)
@@ -19488,6 +19716,16 @@
 			(type default)
 		)
 		(uuid "41b4f326-dc1b-48bb-9481-e3c72203fad3")
+	)
+	(polyline
+		(pts
+			(xy 474.976 248.92) (xy 476.246 247.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41f073ca-cb19-4f81-a9c6-12e896283016")
 	)
 	(bus
 		(pts
@@ -19561,6 +19799,16 @@
 	)
 	(wire
 		(pts
+			(xy 416.56 342.9) (xy 435.61 342.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49828ac2-65fe-4d08-904b-75a68fc5b6b1")
+	)
+	(wire
+		(pts
 			(xy 130.81 293.37) (xy 153.67 293.37)
 		)
 		(stroke
@@ -19572,13 +19820,23 @@
 	)
 	(wire
 		(pts
-			(xy 416.56 279.4) (xy 448.31 279.4)
+			(xy 416.56 279.4) (xy 495.3 279.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "4b497641-4bb3-41e9-86ad-05c2d5bccfa0")
+	)
+	(wire
+		(pts
+			(xy 416.56 250.19) (xy 435.61 250.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ccf5c1c-9845-43ba-9205-49d65eceef80")
 	)
 	(wire
 		(pts
@@ -19630,6 +19888,16 @@
 			(color 0 0 0 1)
 		)
 		(uuid "4f17de77-133c-4d16-a547-1b62c2c90ee5")
+	)
+	(polyline
+		(pts
+			(xy 474.976 250.19) (xy 476.246 251.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f52afe8-b53e-4e0a-a2e6-fe0d877cc7d4")
 	)
 	(bus
 		(pts
@@ -19701,9 +19969,19 @@
 		)
 		(uuid "52dd13c7-2e87-48b1-bb95-67c6d4fedfab")
 	)
+	(polyline
+		(pts
+			(xy 474.976 246.38) (xy 476.246 247.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52e441d0-cee1-412c-805b-b30c2056bab3")
+	)
 	(bus
 		(pts
-			(xy 450.85 285.75) (xy 450.85 289.56)
+			(xy 497.84 285.75) (xy 497.84 289.56)
 		)
 		(stroke
 			(width 1)
@@ -19794,7 +20072,7 @@
 	)
 	(wire
 		(pts
-			(xy 416.56 302.26) (xy 448.31 302.26)
+			(xy 416.56 302.26) (xy 495.3 302.26)
 		)
 		(stroke
 			(width 0)
@@ -19811,6 +20089,16 @@
 			(type default)
 		)
 		(uuid "57306cc2-3e20-4074-8733-e7dee181b945")
+	)
+	(polyline
+		(pts
+			(xy 457.196 321.31) (xy 476.246 321.31)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "57ac61af-cb77-42c3-9fa7-dc5bf02f65e7")
 	)
 	(polyline
 		(pts
@@ -19891,6 +20179,16 @@
 			(type default)
 		)
 		(uuid "5c6bc94c-4718-4753-9a4b-a08d67419b2e")
+	)
+	(polyline
+		(pts
+			(xy 474.976 252.73) (xy 476.246 251.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c73133b-2780-461d-84c4-7e13a562d52a")
 	)
 	(wire
 		(pts
@@ -20102,6 +20400,46 @@
 		)
 		(uuid "6517f8e7-a780-470b-bbc3-624cb99da0d9")
 	)
+	(polyline
+		(pts
+			(xy 474.976 264.16) (xy 476.246 262.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6537ec15-89d6-48fb-8431-af8cf975552d")
+	)
+	(polyline
+		(pts
+			(xy 474.976 330.2) (xy 476.246 328.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "653cb9ba-ad79-4160-8074-62a5c56b3c7d")
+	)
+	(wire
+		(pts
+			(xy 358.14 496.57) (xy 363.22 496.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65acb8a9-3c6c-44c3-b5d5-ef01a79c20b1")
+	)
+	(wire
+		(pts
+			(xy 382.27 492.76) (xy 382.27 496.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65b69a7d-fad2-460f-9e61-bc72e6b85f07")
+	)
 	(wire
 		(pts
 			(xy 416.56 86.36) (xy 435.61 86.36)
@@ -20132,6 +20470,16 @@
 			(type default)
 		)
 		(uuid "678a27d3-c45f-4a85-8e72-76e61fd03f77")
+	)
+	(polyline
+		(pts
+			(xy 456.81 233) (xy 456.81 263)
+		)
+		(stroke
+			(width 1)
+			(type dash)
+		)
+		(uuid "6850d4b6-1a81-45ae-bb53-32e063e09b90")
 	)
 	(wire
 		(pts
@@ -20213,16 +20561,6 @@
 		)
 		(uuid "6b530eeb-cf18-4868-8100-cfdf6f30f0d7")
 	)
-	(bus
-		(pts
-			(xy 260.35 436.88) (xy 260.35 541.02)
-		)
-		(stroke
-			(width 1)
-			(type default)
-		)
-		(uuid "6b85de76-460c-437f-81f7-72c10d2fad3a")
-	)
 	(polyline
 		(pts
 			(xy 457.196 177.8) (xy 476.246 177.8)
@@ -20275,16 +20613,6 @@
 	)
 	(bus
 		(pts
-			(xy 355.6 544.83) (xy 355.6 541.02)
-		)
-		(stroke
-			(width 1)
-			(type default)
-		)
-		(uuid "6f25fc41-0d70-4e2d-ac66-5345476040a4")
-	)
-	(bus
-		(pts
 			(xy 355.6 450.85) (xy 359.41 447.04)
 		)
 		(stroke
@@ -20292,6 +20620,16 @@
 			(type default)
 		)
 		(uuid "6f88eaff-dc3b-4a4c-a24f-6b668f7ed410")
+	)
+	(polyline
+		(pts
+			(xy 457.196 240.03) (xy 476.246 240.03)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "6fb8efae-4ef4-43bc-ae5c-c6218c1be34c")
 	)
 	(bus
 		(pts
@@ -20342,6 +20680,16 @@
 			(type default)
 		)
 		(uuid "73bfef03-edbe-44a7-b585-0ae7eadddcc6")
+	)
+	(polyline
+		(pts
+			(xy 474.976 250.19) (xy 476.246 251.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74135059-bf5f-4af0-858c-839d33000c1a")
 	)
 	(bus
 		(pts
@@ -20453,6 +20801,16 @@
 			(type default)
 		)
 		(uuid "77670611-43db-4236-a972-ff366d1446b4")
+	)
+	(bus
+		(pts
+			(xy 355.6 490.22) (xy 355.6 544.83)
+		)
+		(stroke
+			(width 1)
+			(type default)
+		)
+		(uuid "776b6abf-6219-4490-88da-39f31860e143")
 	)
 	(wire
 		(pts
@@ -20604,6 +20962,26 @@
 		)
 		(uuid "7dbef9f7-b56e-4bf4-9ee4-b14e3acbd9ea")
 	)
+	(wire
+		(pts
+			(xy 416.56 265.43) (xy 435.61 265.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e1d3722-0f33-42f8-8f18-e6811ca49541")
+	)
+	(wire
+		(pts
+			(xy 416.56 339.09) (xy 435.61 339.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e58758f-6d56-4413-8b28-fa542af14c46")
+	)
 	(polyline
 		(pts
 			(xy 457.4233 68.2708) (xy 476.4733 68.2708)
@@ -20614,6 +20992,36 @@
 		)
 		(uuid "7f7e3b7c-8056-45d3-a311-50248bf8f730")
 	)
+	(polyline
+		(pts
+			(xy 457.196 344.17) (xy 476.246 344.17)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "7faa8818-825e-4de7-8208-a7626d885fcf")
+	)
+	(polyline
+		(pts
+			(xy 474.976 260.35) (xy 476.246 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8023abaf-0ed9-4454-bc8e-19304c6e20d0")
+	)
+	(polyline
+		(pts
+			(xy 474.976 327.66) (xy 476.246 328.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80478d09-ee28-4cf1-9b2c-93e513aa0b4a")
+	)
 	(bus
 		(pts
 			(xy 137.16 226.06) (xy 137.16 222.25)
@@ -20623,6 +21031,16 @@
 			(type default)
 		)
 		(uuid "807a5d92-403c-48e5-b740-341cdd257d1d")
+	)
+	(polyline
+		(pts
+			(xy 457.196 255.27) (xy 476.246 255.27)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "80e67cbc-780f-4f6c-98ab-6e8e179f03b2")
 	)
 	(wire
 		(pts
@@ -20643,6 +21061,26 @@
 			(type default)
 		)
 		(uuid "837a5619-4c3a-44d5-8e8f-20d420893183")
+	)
+	(polyline
+		(pts
+			(xy 474.976 323.85) (xy 476.246 325.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83bc91a7-8f64-4c65-b1e5-84b8b574c205")
+	)
+	(wire
+		(pts
+			(xy 416.56 335.28) (xy 435.61 335.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8407e431-01af-4327-8d46-a1a9caa1c67a")
 	)
 	(polyline
 		(pts
@@ -20695,16 +21133,6 @@
 		)
 		(uuid "865fdf68-65d0-4013-babe-34a35d701530")
 	)
-	(bus
-		(pts
-			(xy 167.64 524.51) (xy 167.64 485.14)
-		)
-		(stroke
-			(width 1)
-			(type default)
-		)
-		(uuid "866aea3d-1360-41c3-ab76-bfc14eb08344")
-	)
 	(wire
 		(pts
 			(xy 325.12 284.48) (xy 336.55 284.48)
@@ -20754,6 +21182,26 @@
 			(type default)
 		)
 		(uuid "872ca96e-04b3-4e54-b741-e9116d1dc2f0")
+	)
+	(polyline
+		(pts
+			(xy 474.976 341.63) (xy 476.246 340.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "878d1af5-349b-4a96-8468-bd99303f851d")
+	)
+	(polyline
+		(pts
+			(xy 474.976 345.44) (xy 476.246 344.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "882ded07-8dfa-4f52-bb1a-3a3be13de04f")
 	)
 	(polyline
 		(pts
@@ -20817,6 +21265,16 @@
 	)
 	(wire
 		(pts
+			(xy 262.89 497.84) (xy 262.89 543.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89d74b29-345a-4c7c-b9f8-a21933dd8577")
+	)
+	(wire
+		(pts
 			(xy 130.81 205.74) (xy 134.62 205.74)
 		)
 		(stroke
@@ -20844,6 +21302,16 @@
 			(type default)
 		)
 		(uuid "8adab83d-84a1-4caf-b8e4-0f7b6b95fdf0")
+	)
+	(polyline
+		(pts
+			(xy 438 344.28) (xy 438 314.28)
+		)
+		(stroke
+			(width 1)
+			(type dash)
+		)
+		(uuid "8adb8806-a01d-4d03-b60a-325806bd21f0")
 	)
 	(bus
 		(pts
@@ -20977,6 +21445,16 @@
 	)
 	(polyline
 		(pts
+			(xy 474.976 242.57) (xy 476.246 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9064b5aa-c7e9-4beb-83ec-561cef44d1db")
+	)
+	(polyline
+		(pts
 			(xy 474.98 109.22) (xy 476.25 110.49)
 		)
 		(stroke
@@ -21005,6 +21483,16 @@
 		)
 		(uuid "9146fce7-55b3-498a-b7c4-754b50b4f005")
 	)
+	(polyline
+		(pts
+			(xy 474.976 331.47) (xy 476.246 332.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91526d81-8ced-4282-8da8-19aaff9e7ab8")
+	)
 	(wire
 		(pts
 			(xy 325.12 364.49) (xy 336.55 364.49)
@@ -21017,7 +21505,7 @@
 	)
 	(bus
 		(pts
-			(xy 450.85 297.18) (xy 450.85 300.99)
+			(xy 497.84 297.18) (xy 497.84 300.99)
 		)
 		(stroke
 			(width 1)
@@ -21095,6 +21583,36 @@
 		)
 		(uuid "9575a3bb-ed5a-4903-aa40-42772ee91fa7")
 	)
+	(wire
+		(pts
+			(xy 416.56 323.85) (xy 435.61 323.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96a0e4d9-f23e-4a64-9f00-1de5ca067695")
+	)
+	(polyline
+		(pts
+			(xy 457.196 317.5) (xy 476.246 317.5)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "976bc966-fd71-414a-82a1-5571e1886f62")
+	)
+	(polyline
+		(pts
+			(xy 474.976 342.9) (xy 476.246 344.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9782b354-1c98-4dd3-b496-094c9638b1e7")
+	)
 	(bus
 		(pts
 			(xy 137.16 241.3) (xy 137.16 237.49)
@@ -21137,7 +21655,7 @@
 	)
 	(bus
 		(pts
-			(xy 450.85 529.59) (xy 455.93 534.67)
+			(xy 497.84 529.59) (xy 502.92 534.67)
 		)
 		(stroke
 			(width 1)
@@ -21164,6 +21682,16 @@
 			(type default)
 		)
 		(uuid "99db2911-6649-4f42-8dab-36a5008698fd")
+	)
+	(wire
+		(pts
+			(xy 358.14 496.57) (xy 358.14 543.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a5f550e-1fc7-4262-9e1f-6622a5ee6c46")
 	)
 	(bus
 		(pts
@@ -21197,13 +21725,23 @@
 	)
 	(bus
 		(pts
-			(xy 455.93 534.67) (xy 466.09 534.67)
+			(xy 502.92 534.67) (xy 513.08 534.67)
 		)
 		(stroke
 			(width 1)
 			(type default)
 		)
 		(uuid "9e348386-1cde-40f6-8a75-e8676f8c25da")
+	)
+	(polyline
+		(pts
+			(xy 474.976 234.95) (xy 476.246 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ec71b9f-6a8f-4636-bcdb-844ead11686f")
 	)
 	(polyline
 		(pts
@@ -21237,7 +21775,7 @@
 	)
 	(bus
 		(pts
-			(xy 450.85 304.8) (xy 450.85 308.61)
+			(xy 497.84 304.8) (xy 497.84 308.61)
 		)
 		(stroke
 			(width 1)
@@ -21254,6 +21792,16 @@
 			(type default)
 		)
 		(uuid "a05d4d2f-8119-4c6c-a1ad-d3b28ee54e7a")
+	)
+	(polyline
+		(pts
+			(xy 474.976 242.57) (xy 476.246 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0795490-40e5-4e8d-8d0c-6a70a0befdd8")
 	)
 	(wire
 		(pts
@@ -21284,6 +21832,16 @@
 			(type default)
 		)
 		(uuid "a108f4b8-3768-4df6-8a6a-342e574ac494")
+	)
+	(polyline
+		(pts
+			(xy 474.976 257.81) (xy 476.246 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a10f112e-e915-40d0-aecd-c77a6eef7d5a")
 	)
 	(wire
 		(pts
@@ -21357,6 +21915,16 @@
 	)
 	(wire
 		(pts
+			(xy 358.14 492.76) (xy 363.22 492.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a60dbabd-789a-4e56-9c86-bb9a38a2df9a")
+	)
+	(wire
+		(pts
 			(xy 416.56 78.74) (xy 435.61 78.74)
 		)
 		(stroke
@@ -21364,6 +21932,16 @@
 			(type default)
 		)
 		(uuid "a6630db0-ba1f-4593-b5e0-5f476ec97d63")
+	)
+	(bus
+		(pts
+			(xy 260.35 436.88) (xy 260.35 491.49)
+		)
+		(stroke
+			(width 1)
+			(type default)
+		)
+		(uuid "a6d05e71-c1e1-4274-9e90-d94165058b32")
 	)
 	(polyline
 		(pts
@@ -21374,6 +21952,26 @@
 			(type default)
 		)
 		(uuid "a6d5bf6b-d181-432f-bc18-2661243bea12")
+	)
+	(wire
+		(pts
+			(xy 416.56 254) (xy 435.61 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a719a6e7-178d-4946-ad9b-b4110352223c")
+	)
+	(polyline
+		(pts
+			(xy 456.81 314.28) (xy 456.81 344.28)
+		)
+		(stroke
+			(width 1)
+			(type dash)
+		)
+		(uuid "a7cff7c3-3da6-4881-8273-bf104f1b5f83")
 	)
 	(wire
 		(pts
@@ -21405,6 +22003,16 @@
 		)
 		(uuid "abfe9fec-5df1-4520-b403-753eca625844")
 	)
+	(polyline
+		(pts
+			(xy 438 314) (xy 440 312)
+		)
+		(stroke
+			(width 1)
+			(type dash)
+		)
+		(uuid "ac8e5439-9270-4da0-b64c-f0eddcebb341")
+	)
 	(bus
 		(pts
 			(xy 438.15 99.06) (xy 438.15 102.87)
@@ -21424,6 +22032,16 @@
 			(type default)
 		)
 		(uuid "acf7e055-d835-42a3-9874-fb638a009f99")
+	)
+	(polyline
+		(pts
+			(xy 474.976 327.66) (xy 476.246 328.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad569a56-c023-4877-ba8f-b3bc2580946b")
 	)
 	(bus
 		(pts
@@ -21454,6 +22072,16 @@
 			(type default)
 		)
 		(uuid "ae3c5421-11fa-4fe4-a952-d15ca19039d5")
+	)
+	(wire
+		(pts
+			(xy 416.56 242.57) (xy 435.61 242.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae547431-10dd-41d5-b847-495493341edb")
 	)
 	(polyline
 		(pts
@@ -21515,6 +22143,16 @@
 		)
 		(uuid "b056d4bd-e73f-402e-a528-dc3f64684469")
 	)
+	(polyline
+		(pts
+			(xy 474.976 322.58) (xy 476.246 321.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b05a5090-c2d3-41e1-a875-ab645a586221")
+	)
 	(wire
 		(pts
 			(xy 336.55 86.36) (xy 332.74 86.36)
@@ -21534,6 +22172,16 @@
 			(type default)
 		)
 		(uuid "b127f470-55bc-4a85-9abb-d7f009c491ea")
+	)
+	(polyline
+		(pts
+			(xy 454.81 312) (xy 456.81 314)
+		)
+		(stroke
+			(width 1)
+			(type dash)
+		)
+		(uuid "b1ee9346-884b-4385-ac88-dc32bdf6676e")
 	)
 	(bus
 		(pts
@@ -21565,6 +22213,16 @@
 			(type default)
 		)
 		(uuid "b2d592f0-7fa5-4d27-9332-36118a2de0e4")
+	)
+	(bus
+		(pts
+			(xy 260.35 491.49) (xy 260.35 544.83)
+		)
+		(stroke
+			(width 1)
+			(type default)
+		)
+		(uuid "b3996bdc-95a6-4d1e-82c9-1d827c1bb157")
 	)
 	(wire
 		(pts
@@ -21626,6 +22284,16 @@
 		)
 		(uuid "b6d57fbc-31bb-4f7e-9b9e-4cfa8786db6f")
 	)
+	(wire
+		(pts
+			(xy 373.38 492.76) (xy 374.65 492.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b70d9b66-79de-4ebe-ada4-bbb822132bd8")
+	)
 	(polyline
 		(pts
 			(xy 474.98 74.93) (xy 476.25 76.2)
@@ -21656,6 +22324,26 @@
 		)
 		(uuid "b7cd563e-8117-4d35-9ec5-dfc4337802bc")
 	)
+	(polyline
+		(pts
+			(xy 474.976 342.9) (xy 476.246 344.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8168bed-f319-4b0a-b24f-a0501e0e46ac")
+	)
+	(polyline
+		(pts
+			(xy 440 312) (xy 454 312)
+		)
+		(stroke
+			(width 1)
+			(type dash)
+		)
+		(uuid "b8a49483-5372-47e3-b545-344310348691")
+	)
 	(bus
 		(pts
 			(xy 325.12 44.45) (xy 142.24 44.45)
@@ -21665,6 +22353,16 @@
 			(type default)
 		)
 		(uuid "b8cb3872-33a3-430e-bebf-586587f62da6")
+	)
+	(wire
+		(pts
+			(xy 278.13 497.84) (xy 287.02 497.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8e27cc0-58f5-4cc4-a5e1-2e348c344d80")
 	)
 	(wire
 		(pts
@@ -21705,6 +22403,16 @@
 			(type default)
 		)
 		(uuid "bbc0d358-6564-4aa6-8626-a48e7475784a")
+	)
+	(wire
+		(pts
+			(xy 416.56 320.04) (xy 435.61 320.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc2d39e3-5508-4005-9460-b17d84650105")
 	)
 	(wire
 		(pts
@@ -21758,7 +22466,7 @@
 	)
 	(bus
 		(pts
-			(xy 450.85 300.99) (xy 450.85 304.8)
+			(xy 497.84 300.99) (xy 497.84 304.8)
 		)
 		(stroke
 			(width 1)
@@ -21846,6 +22554,26 @@
 		)
 		(uuid "c0eb2e18-b4b3-4f0b-a871-3527e314003a")
 	)
+	(wire
+		(pts
+			(xy 416.56 261.62) (xy 435.61 261.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0f86724-d548-4e35-a912-ebc324656661")
+	)
+	(polyline
+		(pts
+			(xy 457.196 332.74) (xy 476.246 332.74)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "c1358c06-41d6-4ae8-829f-5e97b72eabc0")
+	)
 	(bus
 		(pts
 			(xy 438.15 173.99) (xy 438.15 161.29)
@@ -21868,7 +22596,7 @@
 	)
 	(bus
 		(pts
-			(xy 167.64 466.09) (xy 167.64 420.37)
+			(xy 167.64 420.37) (xy 167.64 524.51)
 		)
 		(stroke
 			(width 1)
@@ -21926,6 +22654,16 @@
 		)
 		(uuid "c4891a34-ca11-4259-995f-d80818b412ec")
 	)
+	(polyline
+		(pts
+			(xy 474.976 318.77) (xy 476.246 317.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4efd47b-6a56-4a99-8f4b-ba8e759a10ff")
+	)
 	(wire
 		(pts
 			(xy 262.89 543.56) (xy 267.97 543.56)
@@ -21968,7 +22706,7 @@
 	)
 	(wire
 		(pts
-			(xy 416.56 306.07) (xy 448.31 306.07)
+			(xy 416.56 306.07) (xy 495.3 306.07)
 		)
 		(stroke
 			(width 0)
@@ -21985,6 +22723,16 @@
 			(type default)
 		)
 		(uuid "c5f8bab2-5cd0-447e-b6ef-16e7aab577fe")
+	)
+	(polyline
+		(pts
+			(xy 474.976 316.23) (xy 476.246 317.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c65c6890-f886-46c2-87c2-deb89e7bba95")
 	)
 	(bus
 		(pts
@@ -22028,7 +22776,7 @@
 	)
 	(wire
 		(pts
-			(xy 416.56 290.83) (xy 448.31 290.83)
+			(xy 416.56 290.83) (xy 495.3 290.83)
 		)
 		(stroke
 			(width 0)
@@ -22065,6 +22813,26 @@
 			(type default)
 		)
 		(uuid "c9141f26-208a-4a28-9d22-bbf579624f5f")
+	)
+	(polyline
+		(pts
+			(xy 474.976 241.3) (xy 476.246 240.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c92e2bb8-70cb-40e8-be8a-1773d41951b8")
+	)
+	(polyline
+		(pts
+			(xy 457.196 328.93) (xy 476.246 328.93)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "c93a96ff-dd32-4c69-a75c-c2418f2f0319")
 	)
 	(polyline
 		(pts
@@ -22108,7 +22876,7 @@
 	)
 	(wire
 		(pts
-			(xy 416.56 298.45) (xy 448.31 298.45)
+			(xy 416.56 298.45) (xy 495.3 298.45)
 		)
 		(stroke
 			(width 0)
@@ -22166,6 +22934,16 @@
 		)
 		(uuid "ceb2abb0-a067-43f1-a20b-ec3bc673fbd9")
 	)
+	(polyline
+		(pts
+			(xy 457.196 236.22) (xy 476.246 236.22)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "cf86bc4f-1eb0-4fbb-b1b1-2f8e1b03804d")
+	)
 	(wire
 		(pts
 			(xy 336.55 151.13) (xy 332.74 151.13)
@@ -22178,13 +22956,33 @@
 	)
 	(bus
 		(pts
-			(xy 450.85 281.94) (xy 450.85 285.75)
+			(xy 497.84 281.94) (xy 497.84 285.75)
 		)
 		(stroke
 			(width 1)
 			(type default)
 		)
 		(uuid "cfbabe8c-542e-49e8-89ad-81864dfddc4d")
+	)
+	(polyline
+		(pts
+			(xy 474.976 238.76) (xy 476.246 240.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d00b7739-a99c-40d9-b724-34299b803554")
+	)
+	(wire
+		(pts
+			(xy 262.89 494.03) (xy 267.97 494.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d01a3003-25d8-4179-afb0-1e02cd6a2e05")
 	)
 	(polyline
 		(pts
@@ -22236,6 +23034,16 @@
 		)
 		(uuid "d1570c58-e539-43d7-88f9-92ee632d3e6c")
 	)
+	(polyline
+		(pts
+			(xy 474.976 261.62) (xy 476.246 262.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d178852e-7814-494c-b73f-1d36901094d6")
+	)
 	(bus
 		(pts
 			(xy 438.15 137.16) (xy 438.15 140.97)
@@ -22277,6 +23085,16 @@
 		)
 		(uuid "d2eb59aa-f6e4-4491-b01a-d5b165a9796d")
 	)
+	(wire
+		(pts
+			(xy 278.13 494.03) (xy 279.4 494.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3d97184-3648-44ba-80b1-19c1658c6f45")
+	)
 	(polyline
 		(pts
 			(xy 474.98 111.76) (xy 476.25 110.49)
@@ -22286,6 +23104,16 @@
 			(type default)
 		)
 		(uuid "d43880b8-8c44-427f-9aee-f21b43cb75dc")
+	)
+	(polyline
+		(pts
+			(xy 474.976 323.85) (xy 476.246 325.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d493740a-6ea0-4401-9e24-37868f641e5f")
 	)
 	(bus
 		(pts
@@ -22299,7 +23127,7 @@
 	)
 	(bus
 		(pts
-			(xy 450.85 293.37) (xy 450.85 297.18)
+			(xy 497.84 293.37) (xy 497.84 297.18)
 		)
 		(stroke
 			(width 1)
@@ -22369,13 +23197,23 @@
 	)
 	(bus
 		(pts
-			(xy 450.85 289.56) (xy 450.85 293.37)
+			(xy 497.84 289.56) (xy 497.84 293.37)
 		)
 		(stroke
 			(width 1)
 			(type default)
 		)
 		(uuid "d9654a77-5d66-49fe-8557-361a6e53df2b")
+	)
+	(polyline
+		(pts
+			(xy 474.976 316.23) (xy 476.246 317.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da11a573-1504-4369-aa9d-92c2a20757cd")
 	)
 	(wire
 		(pts
@@ -22417,6 +23255,16 @@
 		)
 		(uuid "dbf15906-fb09-472e-bf72-394986c21611")
 	)
+	(polyline
+		(pts
+			(xy 438 233) (xy 440 231)
+		)
+		(stroke
+			(width 1)
+			(type dash)
+		)
+		(uuid "dbff6471-d7e4-4b3b-bba9-0337dff7a50d")
+	)
 	(bus
 		(pts
 			(xy 138.43 468.63) (xy 138.43 464.82)
@@ -22446,6 +23294,16 @@
 			(type default)
 		)
 		(uuid "de104d3f-c97c-47d1-81c2-dfa2326c8798")
+	)
+	(polyline
+		(pts
+			(xy 457.196 251.46) (xy 476.246 251.46)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "de5bbfbb-ccb7-4bd2-a025-fc3dfe61d48a")
 	)
 	(polyline
 		(pts
@@ -22497,6 +23355,16 @@
 		)
 		(uuid "e0d3ba76-d75b-49a2-bacb-5fbbf6ad1950")
 	)
+	(wire
+		(pts
+			(xy 416.56 346.71) (xy 435.61 346.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e12f82df-77db-4470-a817-0474ae96964f")
+	)
 	(bus
 		(pts
 			(xy 325.12 44.45) (xy 330.2 49.53)
@@ -22547,6 +23415,16 @@
 		)
 		(uuid "e297a5ca-4df0-4908-aa4c-93cda6c1967f")
 	)
+	(polyline
+		(pts
+			(xy 474.976 257.81) (xy 476.246 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2d7ed3e-524c-4565-a2a4-d4c0c22c48a7")
+	)
 	(bus
 		(pts
 			(xy 313.69 309.88) (xy 313.69 313.69)
@@ -22586,6 +23464,16 @@
 			(type default)
 		)
 		(uuid "e43880f2-27ec-432b-8e57-d1e6f9f6e455")
+	)
+	(polyline
+		(pts
+			(xy 474.976 238.76) (xy 476.246 240.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e48ed083-487f-4066-9ae9-784a8a4d66b8")
 	)
 	(wire
 		(pts
@@ -22627,6 +23515,36 @@
 			(type default)
 		)
 		(uuid "e6979f96-aaaa-4d2b-9498-352115a75f0c")
+	)
+	(polyline
+		(pts
+			(xy 457.196 262.89) (xy 476.246 262.89)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "e6f1e289-36bd-4c7d-86dd-5fd04422bc6f")
+	)
+	(polyline
+		(pts
+			(xy 474.976 339.09) (xy 476.246 340.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e746ec85-7032-4bb5-b08b-f4129ed33c7a")
+	)
+	(wire
+		(pts
+			(xy 416.56 331.47) (xy 435.61 331.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e78dba73-4317-400f-8d8f-a57a2d086018")
 	)
 	(polyline
 		(pts
@@ -22729,6 +23647,16 @@
 		)
 		(uuid "eac6ff5c-378c-44a5-97c0-7301758e1b29")
 	)
+	(polyline
+		(pts
+			(xy 474.976 334.01) (xy 476.246 332.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ead9e152-9609-4ca2-9c3d-ed79fe5415e6")
+	)
 	(wire
 		(pts
 			(xy 316.23 295.91) (xy 336.55 295.91)
@@ -22748,6 +23676,26 @@
 			(type default)
 		)
 		(uuid "eb918ea4-90f6-45de-83f0-d31a0c42f9f0")
+	)
+	(polyline
+		(pts
+			(xy 457.196 325.12) (xy 476.246 325.12)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "ebec6ae4-60dd-471c-829a-68a5628adc81")
+	)
+	(polyline
+		(pts
+			(xy 474.976 320.04) (xy 476.246 321.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec88e528-86c4-4887-b9c4-f1d3cd0670ee")
 	)
 	(polyline
 		(pts
@@ -22778,6 +23726,16 @@
 			(type default)
 		)
 		(uuid "ecb138bd-fe16-4e03-a6d0-4a779b4e6810")
+	)
+	(wire
+		(pts
+			(xy 416.56 246.38) (xy 435.61 246.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed8da265-56a8-4ae6-9f95-e8d761d9cc28")
 	)
 	(wire
 		(pts
@@ -22819,6 +23777,16 @@
 			(type default)
 		)
 		(uuid "ef50adbf-9b25-41a0-b0af-bffa7d9f36ee")
+	)
+	(polyline
+		(pts
+			(xy 474.976 331.47) (xy 476.246 332.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efd333e7-6643-4131-9bd1-c397d0cf6dbb")
 	)
 	(wire
 		(pts
@@ -23013,6 +23981,16 @@
 	)
 	(polyline
 		(pts
+			(xy 474.976 339.09) (xy 476.246 340.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6fd239c-e66d-4a2d-bccb-20543fcf63d6")
+	)
+	(polyline
+		(pts
 			(xy 474.98 97.79) (xy 476.25 99.06)
 		)
 		(stroke
@@ -23033,7 +24011,7 @@
 	)
 	(wire
 		(pts
-			(xy 416.56 283.21) (xy 448.31 283.21)
+			(xy 416.56 283.21) (xy 495.3 283.21)
 		)
 		(stroke
 			(width 0)
@@ -23063,16 +24041,6 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 487.68) (xy 173.99 487.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f9bbb797-dfef-43b0-9a77-606a0a45774c")
-	)
-	(wire
-		(pts
 			(xy 130.81 228.6) (xy 134.62 228.6)
 		)
 		(stroke
@@ -23080,16 +24048,6 @@
 			(type default)
 		)
 		(uuid "f9c1acfd-0628-40ce-8c55-51e8b324a88d")
-	)
-	(bus
-		(pts
-			(xy 355.6 541.02) (xy 355.6 450.85)
-		)
-		(stroke
-			(width 1)
-			(type default)
-		)
-		(uuid "fa3879ac-c8d1-4eab-b035-c2b99ee38ddd")
 	)
 	(wire
 		(pts
@@ -23173,6 +24131,16 @@
 	)
 	(polyline
 		(pts
+			(xy 474.976 234.95) (xy 476.246 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc50f9c2-67d3-47e5-b41b-b86a9fb46336")
+	)
+	(polyline
+		(pts
 			(xy 457.2 133.35) (xy 476.25 133.35)
 		)
 		(stroke
@@ -23180,16 +24148,6 @@
 			(type default)
 		)
 		(uuid "fc9b9a13-5303-4323-814c-88eb74c71152")
-	)
-	(bus
-		(pts
-			(xy 260.35 544.83) (xy 260.35 541.02)
-		)
-		(stroke
-			(width 1)
-			(type default)
-		)
-		(uuid "fcae5959-15df-4801-9285-e5752aa9d911")
 	)
 	(wire
 		(pts
@@ -23223,6 +24181,16 @@
 	)
 	(bus
 		(pts
+			(xy 355.6 450.85) (xy 355.6 490.22)
+		)
+		(stroke
+			(width 1)
+			(type default)
+		)
+		(uuid "fd8a0ca8-b16b-4712-9d52-e04489b4921f")
+	)
+	(bus
+		(pts
 			(xy 185.42 203.2) (xy 185.42 199.39)
 		)
 		(stroke
@@ -23230,6 +24198,16 @@
 			(type default)
 		)
 		(uuid "fd94f092-b2e4-4fa0-9931-cafbfabef790")
+	)
+	(polyline
+		(pts
+			(xy 474.976 254) (xy 476.246 255.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdb18bc4-a65d-4c0f-820e-d785b39a4aa5")
 	)
 	(bus
 		(pts
@@ -23253,7 +24231,7 @@
 	)
 	(wire
 		(pts
-			(xy 416.56 287.02) (xy 448.31 287.02)
+			(xy 416.56 287.02) (xy 495.3 287.02)
 		)
 		(stroke
 			(width 0)
@@ -23424,6 +24402,36 @@
 		)
 		(uuid "0e1b464f-4416-407c-b83b-734d9c36bd81")
 	)
+	(label "6"
+		(at 459.74 255.27 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "0f68c29b-19b7-4001-9769-be2db75b565c")
+	)
+	(label "1"
+		(at 419.1 238.76 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "0f71c12f-db71-4ce2-8b91-8adcf01e62e1")
+	)
+	(label "2"
+		(at 264.16 497.84 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "0f98c877-e60a-4f13-b787-c44937981e4f")
+	)
 	(label "12"
 		(at 133.35 156.21 0)
 		(effects
@@ -23506,6 +24514,16 @@
 		)
 		(uuid "16c54d21-5556-49b2-89a4-88635a2022b4")
 	)
+	(label "6"
+		(at 419.1 339.09 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "1733d735-92e2-4b4d-ba1c-9d16da1edb91")
+	)
 	(label "10"
 		(at 459.744 91.44 0)
 		(effects
@@ -23526,6 +24544,16 @@
 		)
 		(uuid "190a2029-5766-4549-9ee3-2ba9544cc3f7")
 	)
+	(label "5"
+		(at 459.74 332.74 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "1c4b636b-ec4b-4539-9ccf-0349b41bf103")
+	)
 	(label "12"
 		(at 165.1 255.27 180)
 		(effects
@@ -23539,7 +24567,7 @@
 		(uuid "1c5382e2-47f2-453e-bfb0-826485871bcb")
 	)
 	(label "8"
-		(at 450.85 481.33 90)
+		(at 497.84 481.33 90)
 		(effects
 			(font
 				(size 3 3)
@@ -23549,6 +24577,36 @@
 			(justify left bottom)
 		)
 		(uuid "1cf92a79-ed3a-4848-a2e4-7a87758be7d9")
+	)
+	(label "5"
+		(at 419.1 254 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "1d6a3ed9-efb8-4f21-b088-071fc7517696")
+	)
+	(label "1"
+		(at 419.1 320.04 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "1e409a9a-88cb-48fd-815d-294a8848accd")
+	)
+	(label "2"
+		(at 459.74 321.31 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "1e66866d-be64-473a-9354-b90c7f4ddb8b")
 	)
 	(label "2"
 		(at 133.35 538.48 0)
@@ -23722,6 +24780,16 @@
 		)
 		(uuid "3074d66e-6f2f-421e-b8f8-767c1740d21d")
 	)
+	(label "2"
+		(at 359.41 496.57 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "30ac989c-e85d-4b26-aaac-4c2d1e1ceee7")
+	)
 	(label "4"
 		(at 133.35 527.05 0)
 		(effects
@@ -23822,6 +24890,36 @@
 		)
 		(uuid "36267253-25e9-429b-a20d-a4874f542572")
 	)
+	(label "3"
+		(at 419.1 327.66 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "379cd8cb-34be-44e1-83e5-973e8bf716e3")
+	)
+	(label "4"
+		(at 419.1 250.19 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "3892144d-0986-40ca-992e-5d2dc90f2b47")
+	)
+	(label "2"
+		(at 419.1 323.85 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "395ed3fb-f98f-4987-828a-f5b69b4ec8d0")
+	)
 	(label "3,7"
 		(at 170.18 537.21 0)
 		(effects
@@ -23831,6 +24929,16 @@
 			(justify left bottom)
 		)
 		(uuid "39a70642-dda0-4312-a399-be51d61c47b1")
+	)
+	(label "4"
+		(at 459.74 247.65 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "39b483a7-71b0-4ef1-9726-82c7094d953b")
 	)
 	(label "1"
 		(at 132.084 394.97 0)
@@ -23933,6 +25041,16 @@
 			(justify left bottom)
 		)
 		(uuid "45098e28-4532-457b-b611-6c8fe9a1242a")
+	)
+	(label "7"
+		(at 459.74 259.08 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "45582c2b-1cf0-4ee7-9893-84cab23dc790")
 	)
 	(label "15"
 		(at 459.744 110.49 0)
@@ -24064,6 +25182,16 @@
 		)
 		(uuid "5780d1b5-6db3-4e63-bca5-a6f9500e013b")
 	)
+	(label "7"
+		(at 459.74 340.36 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "5788fd79-7311-4c71-84c0-ac7b554270a4")
+	)
 	(label "14"
 		(at 187.96 243.84 0)
 		(effects
@@ -24073,6 +25201,16 @@
 			(justify left bottom)
 		)
 		(uuid "57f691e3-5ff7-4268-adc8-5c476960ef0e")
+	)
+	(label "1"
+		(at 264.16 494.03 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "583c7924-49cb-4fc4-9cb8-7ca9ce1bf5b5")
 	)
 	(label "1"
 		(at 419.104 59.69 0)
@@ -24144,6 +25282,16 @@
 		)
 		(uuid "5e4dfee2-60ed-4153-a21e-f04d34470f84")
 	)
+	(label "5"
+		(at 419.1 335.28 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "5f5fbe8c-03a9-4b86-af58-ce040777ace2")
+	)
 	(label "8"
 		(at 133.35 140.97 0)
 		(effects
@@ -24175,6 +25323,16 @@
 			(justify left bottom)
 		)
 		(uuid "664d091f-fff2-4eb7-9b36-073471a2cab6")
+	)
+	(label "8"
+		(at 419.1 346.71 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "6681aabf-fc31-400e-9077-74bf407bccbd")
 	)
 	(label "14"
 		(at 133.346 163.83 0)
@@ -24248,6 +25406,16 @@
 		)
 		(uuid "6d93d682-b1e7-4861-9d21-c8a317ea4987")
 	)
+	(label "7"
+		(at 419.1 261.62 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "6e6b28b7-c4a9-44fc-a25d-5bb837cd796a")
+	)
 	(label "29"
 		(at 332.744 166.37 0)
 		(effects
@@ -24257,6 +25425,16 @@
 			(justify left bottom)
 		)
 		(uuid "6fda7357-0347-4b59-9c52-0c6225868110")
+	)
+	(label "1"
+		(at 359.41 492.76 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "6fea8aeb-0599-4b65-acce-470a375ba559")
 	)
 	(label "17"
 		(at 332.744 120.65 0)
@@ -24444,6 +25622,16 @@
 		)
 		(uuid "7d53a5af-8db9-4c71-8126-e37125c42677")
 	)
+	(label "3"
+		(at 459.74 243.84 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "7fbea0ac-ad97-48c2-a0d6-923d099368d3")
+	)
 	(label "18"
 		(at 419.104 124.46 0)
 		(effects
@@ -24474,6 +25662,26 @@
 		)
 		(uuid "81958edb-2079-4741-af0d-27daba56d4e2")
 	)
+	(label "5"
+		(at 459.74 251.46 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "81b09114-f2c6-41de-b23f-493d3782f29c")
+	)
+	(label "8"
+		(at 459.74 344.17 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "820f704c-438d-464f-bf69-fcd9ede80208")
+	)
 	(label "21"
 		(at 419.104 135.89 0)
 		(effects
@@ -24503,18 +25711,6 @@
 			(justify left bottom)
 		)
 		(uuid "84f0d4bf-83cc-499f-b352-3ed300a5fb6a")
-	)
-	(label "15"
-		(at 186.69 349.25 180)
-		(effects
-			(font
-				(size 3 3)
-				(thickness 0.4)
-				(bold yes)
-			)
-			(justify right bottom)
-		)
-		(uuid "85c7cc44-a725-4775-adc5-d675a57d29be")
 	)
 	(label "4"
 		(at 419.104 71.12 0)
@@ -24555,6 +25751,16 @@
 			(justify left bottom)
 		)
 		(uuid "8a7a92eb-81ab-4a25-9696-bb6a98fb87a6")
+	)
+	(label "2"
+		(at 459.74 240.03 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "8f7e43cf-980f-48c3-ba5e-61be57105878")
 	)
 	(label "5"
 		(at 325.124 215.9 0)
@@ -24617,6 +25823,16 @@
 		(uuid "96c0145d-b2f1-433e-ac76-b7ea5ce11f35")
 	)
 	(label "1"
+		(at 459.74 236.22 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "96e9ee92-8bf8-4c0a-bc6e-62fece0358e3")
+	)
+	(label "1"
 		(at 133.35 534.67 0)
 		(effects
 			(font
@@ -24668,6 +25884,16 @@
 		)
 		(uuid "a25ea590-696a-4599-b647-a5a25f83580e")
 	)
+	(label "4"
+		(at 459.74 328.93 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "a43d6b4d-ed5b-4de9-813a-f35ac34c3910")
+	)
 	(label "28"
 		(at 133.35 217.17 0)
 		(effects
@@ -24677,6 +25903,26 @@
 			(justify left bottom)
 		)
 		(uuid "a69f3e58-5b03-47da-a612-0d7de9d5bd6f")
+	)
+	(label "4"
+		(at 419.1 331.47 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "a86ee841-6d4f-4a26-ab6a-1fc04a4ee549")
+	)
+	(label "1"
+		(at 459.74 317.5 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "a8f1e25d-2edd-4aa3-8f81-400bc9fdc096")
 	)
 	(label "1"
 		(at 332.74 379.73 0)
@@ -24707,18 +25953,6 @@
 			(justify left bottom)
 		)
 		(uuid "ac7a01db-d833-4f3c-8781-ecbe586fe16e")
-	)
-	(label "16"
-		(at 186.69 358.14 180)
-		(effects
-			(font
-				(size 3 3)
-				(thickness 0.4)
-				(bold yes)
-			)
-			(justify right bottom)
-		)
-		(uuid "aedcebbc-1a0d-4c12-94e5-f3ea952d9922")
 	)
 	(label "25"
 		(at 332.744 151.13 0)
@@ -24780,6 +26014,16 @@
 		)
 		(uuid "b597f8f5-4113-4d8b-ba09-ee8b0051ce34")
 	)
+	(label "8"
+		(at 459.74 262.89 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "b72838b4-5c11-495a-b7d0-4e861feb5457")
+	)
 	(label "7"
 		(at 459.744 80.01 0)
 		(effects
@@ -24810,6 +26054,16 @@
 		)
 		(uuid "b7769ee9-baa8-4307-9114-3abb06c563b1")
 	)
+	(label "6"
+		(at 419.1 257.81 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "b7b20398-cbf5-4427-aa87-b374ad7f8b85")
+	)
 	(label "1"
 		(at 332.744 59.69 0)
 		(effects
@@ -24829,6 +26083,16 @@
 			(justify left bottom)
 		)
 		(uuid "c06edd43-783b-4607-856e-7b291fc169b4")
+	)
+	(label "3"
+		(at 419.1 246.38 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "c11ab691-adbe-4e0e-8e15-8f51bc007ef3")
 	)
 	(label "5"
 		(at 332.74 394.97 0)
@@ -24889,6 +26153,16 @@
 			(justify left bottom)
 		)
 		(uuid "c9da8bb1-3dae-480c-8027-85a82d701d93")
+	)
+	(label "3"
+		(at 459.74 325.12 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "ca220c60-bb85-4d6a-a294-7dddb1283337")
 	)
 	(label "4"
 		(at 459.744 68.58 0)
@@ -25023,6 +26297,16 @@
 			(justify left bottom)
 		)
 		(uuid "d7d613ec-1b8c-43ba-9bd5-ee6d389d993e")
+	)
+	(label "2"
+		(at 419.1 242.57 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "d806f641-26e5-4cc5-86ed-b5d1c79dec17")
 	)
 	(label "20"
 		(at 332.744 132.08 0)
@@ -25258,6 +26542,16 @@
 		)
 		(uuid "ed21b5dd-4a02-4138-83cb-fbffd33303ed")
 	)
+	(label "6"
+		(at 459.74 336.55 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "ef9e685a-a7d2-4e45-9d2a-8e151911835b")
+	)
 	(label "21"
 		(at 332.744 135.89 0)
 		(effects
@@ -25267,6 +26561,16 @@
 			(justify left bottom)
 		)
 		(uuid "f07e05e4-fbe2-4dc0-8a21-786b698807a9")
+	)
+	(label "7"
+		(at 419.1 342.9 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "f173b3b7-0e95-4f79-b552-63122c419cf6")
 	)
 	(label "7"
 		(at 331.47 318.77 0)
@@ -25382,6 +26686,16 @@
 		)
 		(uuid "fdde0838-f81f-46c8-8662-ed67633c467e")
 	)
+	(label "8"
+		(at 419.1 265.43 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "ff46b25d-e300-4871-8987-1c0656ebec6e")
+	)
 	(label "21"
 		(at 133.35 190.5 0)
 		(effects
@@ -25391,6 +26705,144 @@
 			(justify left bottom)
 		)
 		(uuid "ff610fdf-06b3-4b39-b665-9a44ed8e0d32")
+	)
+	(symbol
+		(lib_id "Device:Fuse")
+		(at 378.46 492.76 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1d89b9bf-a37e-4af1-9501-4ab5b711fd60")
+		(property "Reference" "F2"
+			(at 378.46 490.22 90)
+			(effects
+				(font
+					(size 2.5 2.5)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Fuse"
+			(at 378.46 490.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 378.46 494.538 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 378.46 492.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fuse"
+			(at 378.46 492.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d2b4719a-99b2-4420-949a-3320204ef446")
+		)
+		(pin "1"
+			(uuid "6325c252-4014-4bdc-b1ba-ef96b2032934")
+		)
+		(instances
+			(project "Moyka_E4"
+				(path "/d62cde6b-9d94-4067-87d4-3f94960b0c6e"
+					(reference "F2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse")
+		(at 283.21 494.03 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "32a15211-000e-4ed6-bc9d-8d41b9860d0d")
+		(property "Reference" "F1"
+			(at 283.21 491.49 90)
+			(effects
+				(font
+					(size 2.5 2.5)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Fuse"
+			(at 283.21 491.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 283.21 495.808 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 283.21 494.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fuse"
+			(at 283.21 494.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9bf02d5d-71cb-49bf-bc29-6b8367385432")
+		)
+		(pin "1"
+			(uuid "9ee38a12-f193-407c-a79e-d6c296f9db52")
+		)
+		(instances
+			(project ""
+				(path "/d62cde6b-9d94-4067-87d4-3f94960b0c6e"
+					(reference "F1")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(sheet_instances
 		(path "/"
